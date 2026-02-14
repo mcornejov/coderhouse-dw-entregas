@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos base para compatibilidad y responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo de la pagina -->
+    <title>PreEntrega1Cornejo - Menu</title>
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    <!-- Comentarios activados: PreEntrega 1 -->
+    <!-- Encabezado con marca y navegacion -->
+    <header class="site-header">
+      <!-- Marca del local: logo + nombre -->
+      <div class="brand">
+        <a class="brand-link" href="../index.html">
+          <img src="../img/logo.svg" alt="Logo Cafe Aurora">
+        </a>
+        <p class="brand-name">Cafe Aurora</p>
+      </div>
+      <!-- Enlaces a secciones y paginas -->
+      <nav class="site-nav" aria-label="Navegacion principal">
+        <ul class="nav-list">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="#cafes">Cafes</a></li>
+          <li><a href="#pasteleria">Pasteleria</a></li>
+          <li><a href="#origenes">Origenes</a></li>
+          <li><a href="#maridajes">Maridajes</a></li>
+          <li><a href="#recomendados">Recomendados</a></li>
+          <li><a href="#ambiente">Musica</a></li>
+        </ul>
+      </nav>
+      <!-- Identificador de la entrega -->
+      <p class="site-tagline">PreEntrega1Cornejo</p>
+    </header>
+
+    <main>
+      <!-- Seccion introduccion: titulo y descripcion breve -->
+      <section class="menu-intro">
+        <h1>Menu de temporada</h1>
+        <p>Sabores equilibrados y opciones para cada momento del dia.</p>
+      </section>
+
+      <!-- Seccion cafes: lista + metodos + imagen -->
+      <section id="cafes" class="menu-section">
+        <h2>Cafes</h2>
+        <!-- Lista simple de productos -->
+        <ul class="menu-list">
+          <li>Espresso simple</li>
+          <li>Latte vainilla</li>
+          <li>Flat white</li>
+          <li>Cold brew</li>
+        </ul>
+        <!-- Texto de apoyo con metodos -->
+        <p>Metodos disponibles: prensa francesa, aeropress y V60.</p>
+        <!-- Imagen referencial con credito -->
+        <figure class="menu-figure">
+          <img src="../img/producto-1.jpg" alt="Capuccino con pastel">
+          <figcaption>
+            Cafe y pasteleria. Foto: <a href="https://www.freepik.es/foto-gratis/primer-plano-taza-cafe-capuchino-pastel-chocolate_6117711.htm">Freepik</a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Seccion pasteleria: lista + imagen -->
+      <section id="pasteleria" class="menu-section">
+        <h2>Pasteleria artesanal</h2>
+        <!-- Lista de opciones dulces -->
+        <ul class="menu-list">
+          <li>Brownie de cacao</li>
+          <li>Cookie de avena</li>
+          <li>Tarta de limon</li>
+          <li>Budin de naranja</li>
+        </ul>
+        <!-- Imagen con credito -->
+        <figure>
+          <img src="../img/producto-2.jpg" alt="Pasteleria con cafe sobre mesa de madera">
+          <figcaption>
+            Seleccion del dia. Foto: <a href="https://www.freepik.es/foto-gratis/freshly-baked-pastry-with-cup-of-coffee-on-wooden-table_3039265.htm">Freepik</a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Seccion origenes: definiciones por origen -->
+      <section id="origenes" class="menu-section">
+        <h2>Origenes y notas</h2>
+        <!-- Lista de definicion: origen (dt) + notas (dd) -->
+        <dl class="origin-list">
+          <dt>Colombia</dt>
+          <dd>Chocolate, caramelo y final dulce.</dd>
+          <dt>Brasil</dt>
+          <dd>Nueces tostadas y cuerpo redondo.</dd>
+          <dt>Etiopia</dt>
+          <dd>Frutas rojas y perfume floral.</dd>
+        </dl>
+      </section>
+
+      <!-- Seccion maridajes: combinaciones sugeridas -->
+      <section id="maridajes" class="menu-section">
+        <h2>Maridajes sugeridos</h2>
+        <!-- Lista simple de pares -->
+        <ul class="menu-list">
+          <li>Capuccino + brownie de cacao</li>
+          <li>Flat white + cookie de avena</li>
+          <li>Cold brew + tarta de limon</li>
+        </ul>
+      </section>
+
+      <!-- Seccion recomendados: proceso del barista -->
+      <section class="menu-section" id="recomendados">
+        <h2>Recomendados del barista</h2>
+        <!-- Articulo con pasos -->
+        <article>
+          <h3>Como preparamos nuestro cafe filtrado</h3>
+          <!-- Lista ordenada con el proceso -->
+          <ol class="steps-list">
+            <li>Seleccion del grano y molienda fina.</li>
+            <li>Pre infusion de 30 segundos.</li>
+            <li>Vertido lento y constante.</li>
+            <li>Reposo y servicio inmediato.</li>
+          </ol>
+        </article>
+      </section>
+
+      <!-- Seccion ambiente: audio local -->
+      <section id="ambiente" class="ambience">
+        <h2>Musica del local</h2>
+        <p>Una seleccion suave para acompanar el momento del cafe.</p>
+        <!-- Audio local con autoplay (puede requerir interaccion del usuario) -->
+        <audio controls autoplay loop preload="auto">
+          <source src="../img/ambiente.mp3" type="audio/mpeg">
+          Tu navegador no soporta audio.
+        </audio>
+        <!-- Credito de la pista musical -->
+        <p class="music-credit">Musica: "Autumn Is Coming (Piano)" - Monument_Music (Pixabay).</p>
+        <!-- Enlace a la fuente -->
+        <p><a href="https://pixabay.com/music/">Mas musica en Pixabay</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <!-- Texto final y datos de contacto -->
+      <p>Consulta disponibilidad en el local o por mensaje.</p>
+      <!-- Credito general de imagenes -->
+      <p class="credits">Imagenes: Freepik.</p>
+      <address>
+        Av. Principal 123, Ciudad - Tel: (011) 555-1234
+      </address>
+    </footer>
+  </body>
+</html>

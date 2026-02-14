@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900">
+  <rect width="1800" height="900" fill="#ffffff" stroke="#ccc" stroke-width="1"/>
+
+  <text x="300" y="30" text-anchor="middle" font-family="Arial" font-size="18" fill="#333">Desktop - Inicio</text>
+  <text x="900" y="30" text-anchor="middle" font-family="Arial" font-size="18" fill="#333">Desktop - Menu</text>
+  <text x="1500" y="30" text-anchor="middle" font-family="Arial" font-size="18" fill="#333">Desktop - Contacto</text>
+
+  <!-- Frame 1: Inicio -->
+  <rect x="20" y="50" width="560" height="820" fill="#fafafa" stroke="#333" stroke-width="2"/>
+  <rect x="40" y="70" width="520" height="60" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="300" y="105" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Header + Nav</text>
+
+  <rect x="40" y="140" width="520" height="150" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <rect x="60" y="160" width="220" height="110" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <rect x="300" y="160" width="240" height="110" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <text x="170" y="220" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Hero texto + CTA</text>
+  <text x="420" y="220" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Hero imagen</text>
+
+  <rect x="40" y="300" width="520" height="110" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <rect x="60" y="320" width="300" height="70" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <rect x="380" y="320" width="160" height="70" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <text x="210" y="360" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Sobre nosotros</text>
+  <text x="460" y="360" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Datos rapidos</text>
+
+  <rect x="40" y="420" width="520" height="120" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <rect x="70" y="445" width="200" height="70" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <rect x="330" y="445" width="200" height="70" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <text x="170" y="485" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Especialidad 1</text>
+  <text x="430" y="485" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Especialidad 2</text>
+
+  <rect x="40" y="550" width="520" height="80" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="300" y="595" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Experiencia + cita</text>
+
+  <rect x="40" y="640" width="520" height="60" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="300" y="675" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Musica (audio)</text>
+
+  <rect x="40" y="710" width="520" height="60" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="300" y="745" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Footer</text>
+
+  <!-- Frame 2: Menu -->
+  <rect x="620" y="50" width="560" height="820" fill="#fafafa" stroke="#333" stroke-width="2"/>
+  <rect x="640" y="70" width="520" height="60" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="900" y="105" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Header + Nav</text>
+
+  <rect x="640" y="140" width="520" height="80" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="900" y="185" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Titulo + Intro</text>
+
+  <rect x="640" y="230" width="520" height="120" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <rect x="660" y="250" width="300" height="80" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <rect x="970" y="250" width="170" height="80" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <text x="810" y="295" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Lista cafes</text>
+  <text x="1055" y="295" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Imagen</text>
+
+  <rect x="640" y="360" width="520" height="120" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <rect x="660" y="380" width="300" height="80" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <rect x="970" y="380" width="170" height="80" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <text x="810" y="425" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Lista pasteleria</text>
+  <text x="1055" y="425" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Imagen</text>
+
+  <rect x="640" y="490" width="520" height="80" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="900" y="535" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Origenes y notas</text>
+
+  <rect x="640" y="580" width="520" height="70" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="900" y="620" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Maridajes sugeridos</text>
+
+  <rect x="640" y="660" width="520" height="80" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="900" y="705" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Recomendados del barista</text>
+
+  <rect x="640" y="750" width="520" height="60" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="900" y="785" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Musica (audio)</text>
+
+  <rect x="640" y="820" width="520" height="40" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="900" y="845" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Footer</text>
+
+  <!-- Frame 3: Contacto -->
+  <rect x="1220" y="50" width="560" height="820" fill="#fafafa" stroke="#333" stroke-width="2"/>
+  <rect x="1240" y="70" width="520" height="60" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="1500" y="105" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Header + Nav</text>
+
+  <rect x="1240" y="140" width="520" height="70" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="1500" y="180" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Intro + mail</text>
+
+  <rect x="1240" y="220" width="520" height="170" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <rect x="1260" y="240" width="480" height="30" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <rect x="1260" y="280" width="480" height="30" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <rect x="1260" y="320" width="480" height="30" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <rect x="1260" y="360" width="480" height="20" fill="#f7f7f7" stroke="#333" stroke-width="1"/>
+  <text x="1500" y="305" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Formulario</text>
+
+  <rect x="1240" y="400" width="520" height="80" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="1500" y="445" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">FAQ</text>
+
+  <rect x="1240" y="490" width="520" height="120" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="1500" y="555" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Ubicacion + imagen</text>
+
+  <rect x="1240" y="620" width="520" height="80" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="1500" y="665" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Horarios</text>
+
+  <rect x="1240" y="710" width="520" height="60" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="1500" y="745" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Musica (audio)</text>
+
+  <rect x="1240" y="780" width="520" height="60" fill="#ffffff" stroke="#333" stroke-width="1"/>
+  <text x="1500" y="815" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">Footer</text>
+</svg>

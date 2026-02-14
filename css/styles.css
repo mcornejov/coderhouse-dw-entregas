@@ -1,0 +1,240 @@
+/* Comentarios activados: PreEntrega 1 */
+/* Variables de color para mantener coherencia visual */
+:root {
+  --bg: #f7f0e6;
+  --surface: #fff6ea;
+  --ink: #3a2a1f;
+  --accent: #c75a2a;
+  --accent-2: #2b6f68;
+  --muted: #6e5a4f;
+}
+
+/* Reset basico para quitar margenes y padding por defecto */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Desplazamiento suave para anclas internas */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos base del body: tipografia y fondo */
+body {
+  font-family: "Garamond", "Georgia", serif;
+  color: var(--ink);
+  line-height: 1.6;
+  background-color: var(--bg);
+  background-image: linear-gradient(135deg, #f7f0e6 0%, #efe2d1 45%, #f9f4ed 100%);
+}
+
+/* Contenedores principales con fondo suave */
+.site-header,
+.site-footer {
+  background-color: var(--surface);
+  text-align: center;
+}
+
+/* Animacion simple al cargar el header */
+.site-header {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Animacion suave para el contenido principal */
+main {
+  animation: fadeIn 0.9s ease-out;
+}
+
+/* Jerarquia de titulos con estilo consistente */
+h1,
+h2,
+h3 {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Tamanos base de los titulos */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+/* Texto general */
+p {
+  font-size: 1rem;
+}
+
+/* Identidad de marca */
+.brand-name {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Tagline con color secundario */
+.site-tagline {
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+}
+
+/* Estilos para enlaces */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo del llamado a la accion */
+.cta-link {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Secciones con texto centrado */
+.hero,
+.menu-intro,
+.ambience,
+.experience {
+  text-align: center;
+}
+
+/* Navegacion sin vinetas y en mayusculas */
+.nav-list {
+  list-style-type: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Centrado de figuras y fotos */
+figure {
+  text-align: center;
+}
+
+/* Tipos de listas segun contexto */
+.menu-list {
+  list-style-type: square;
+}
+
+.steps-list {
+  list-style-type: decimal;
+}
+
+.info-list {
+  list-style-type: circle;
+}
+
+/* Texto auxiliar bajo imagenes */
+figcaption {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Credito de musica */
+.music-credit {
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Cita de marca */
+blockquote {
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Firma de la cita */
+.quote-author {
+  color: var(--accent-2);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Lista de origenes en formato definicion */
+.origin-list dt {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.origin-list dd {
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Elementos desplegables del FAQ */
+summary {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+details {
+  color: var(--muted);
+}
+
+/* Direccion sin cursiva */
+address {
+  font-style: normal;
+  color: var(--muted);
+}
+
+/* Controles de formulario con fuente heredada */
+input,
+select,
+textarea {
+  font-family: inherit;
+  color: var(--ink);
+  background-color: #ffffff;
+}
+
+/* Etiquetas de formulario */
+label {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Boton principal */
+button {
+  background-color: var(--accent);
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Creditos en el footer */
+.credits {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+/* Animacion reutilizable */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

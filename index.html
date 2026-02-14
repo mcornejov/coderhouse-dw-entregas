@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos base para compatibilidad y responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo de la pagina para la pestana del navegador -->
+    <title>PreEntrega1Cornejo - Inicio</title>
+    <!-- Hoja de estilos principal del proyecto -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Comentarios activados: PreEntrega 1 -->
+    <!-- Estructura general: header, main y footer -->
+    <header class="site-header">
+      <!-- Bloque de marca: logo y nombre del local -->
+      <div class="brand">
+        <a class="brand-link" href="index.html">
+          <img src="img/logo.svg" alt="Logo Cafe Aurora">
+        </a>
+        <p class="brand-name">Cafe Aurora</p>
+      </div>
+      <!-- Navegacion principal con enlaces internos y a otras paginas -->
+      <nav class="site-nav" aria-label="Navegacion principal">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/menu.html">Menu</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+          <li><a href="#sobre">Sobre nosotros</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#ambiente">Musica</a></li>
+        </ul>
+      </nav>
+      <!-- Identificador de la entrega -->
+      <p class="site-tagline">PreEntrega1Cornejo</p>
+    </header>
+
+    <main>
+      <!-- Seccion hero: presentacion general y CTA -->
+      <section id="inicio" class="hero">
+        <!-- Titulo principal y texto de bienvenida -->
+        <h1>Bienvenidos a Cafe Aurora</h1>
+        <p>Un espacio calido para compartir cafe de especialidad, pasteleria artesanal y buena musica.</p>
+        <!-- Imagen destacada con credito -->
+        <figure>
+          <img src="img/hero.jpg" alt="Interior de cafeteria con mesas de madera">
+          <figcaption>
+            Foto: <a href="https://www.freepik.es/foto-gratis/plano-interior-cafe-sillas-cerca-bar-mesas-madera_7810365.htm">Freepik</a>
+          </figcaption>
+        </figure>
+        <!-- Llamado a la accion hacia la pagina de menu -->
+        <p><a class="cta-link" href="pages/menu.html">Ver menu completo</a></p>
+      </section>
+
+      <!-- Seccion sobre: historia breve + datos clave -->
+      <section id="sobre" class="about">
+        <h2>Sobre nosotros</h2>
+        <!-- Texto principal de la seccion -->
+        <article>
+          <p>Nacimos en el barrio con la idea de crear un punto de encuentro para quienes disfrutan el cafe bien hecho.</p>
+          <p>Trabajamos con productores locales y buscamos un servicio simple y cercano.</p>
+        </article>
+        <!-- Aside con info rapida para lectura escaneable -->
+        <aside>
+          <h3>Datos rapidos</h3>
+          <ul class="info-list">
+            <li>Origen del cafe: Colombia</li>
+            <li>Tueste: Medio</li>
+            <li>Metodo favorito: V60</li>
+          </ul>
+        </aside>
+      </section>
+
+      <!-- Seccion especialidades -->
+      <section id="especialidades" class="specials">
+        <h2>Especialidades de la casa</h2>
+        <!-- Producto destacado 1 -->
+        <article class="special-item">
+          <figure>
+            <img src="img/producto-1.jpg" alt="Capuccino con pastel de chocolate">
+            <figcaption>
+              Capuccino clasico. Foto: <a href="https://www.freepik.es/foto-gratis/primer-plano-taza-cafe-capuchino-pastel-chocolate_6117711.htm">Freepik</a>
+            </figcaption>
+          </figure>
+          <p>Espuma suave, cacao natural y cafe de origen unico.</p>
+        </article>
+        <!-- Producto destacado 2 -->
+        <article class="special-item">
+          <figure>
+            <img src="img/producto-2.jpg" alt="Pasteleria y cafe sobre mesa de madera">
+            <figcaption>
+              Tostado artesanal. Foto: <a href="https://www.freepik.es/foto-gratis/freshly-baked-pastry-with-cup-of-coffee-on-wooden-table_3039265.htm">Freepik</a>
+            </figcaption>
+          </figure>
+          <p>Pan de masa madre, queso y vegetales frescos.</p>
+        </article>
+      </section>
+
+      <!-- Seccion experiencia -->
+      <section id="experiencia" class="experience">
+        <h2>Experiencia Aurora</h2>
+        <!-- Texto de tono de marca -->
+        <p>Seleccionamos granos con perfiles dulces y tostados medios para lograr tazas equilibradas.</p>
+        <!-- Cita para reforzar el mensaje -->
+        <blockquote>
+          <p>"El mejor cafe se comparte en calma, con una charla larga y una mesa simple."</p>
+          <p class="quote-author">Equipo Aurora</p>
+        </blockquote>
+      </section>
+
+      <!-- Seccion ambiente: audio local -->
+      <section id="ambiente" class="ambience">
+        <h2>Musica del local</h2>
+        <p>Una seleccion suave para acompanar el momento del cafe.</p>
+        <!-- Audio local con autoplay (puede requerir interaccion del usuario) -->
+        <audio controls autoplay loop preload="auto">
+          <source src="img/ambiente.mp3" type="audio/mpeg">
+          Tu navegador no soporta audio.
+        </audio>
+        <!-- Credito de la pista musical -->
+        <p class="music-credit">Musica: "Autumn Is Coming (Piano)" - Monument_Music (Pixabay).</p>
+        <!-- Enlace a la fuente de musica -->
+        <p><a href="https://pixabay.com/music/">Mas musica en Pixabay</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <!-- Texto de cierre -->
+      <p>Seguinos en nuestras redes y visita el local.</p>
+      <!-- Credito general de imagenes -->
+      <p class="credits">Imagenes: Freepik.</p>
+      <!-- Datos de contacto basicos -->
+      <address>
+        Av. Principal 123, Ciudad - Tel: (011) 555-1234
+      </address>
+    </footer>
+  </body>
+</html>
