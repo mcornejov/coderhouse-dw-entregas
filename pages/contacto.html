@@ -1,136 +1,275 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Metadatos base para compatibilidad y responsive -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titulo de la pagina -->
-    <title>PreEntrega1Cornejo - Contacto</title>
-    <!-- Hoja de estilos principal -->
-    <link rel="stylesheet" href="../css/styles.css">
-  </head>
-  <body>
-    <!-- Comentarios activados: PreEntrega 1 -->
-    <!-- Encabezado con marca y navegacion -->
-    <header class="site-header">
-      <!-- Marca del local -->
-      <div class="brand">
-        <a class="brand-link" href="../index.html">
-          <img src="../img/logo.svg" alt="Logo Cafe Aurora">
-        </a>
-        <p class="brand-name">Cafe Aurora</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Aurora - Contacto</title>
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Navegacion -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-aurora sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo.svg" alt="Logo Cafe Aurora" height="36">
+        Cafe Aurora
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+              aria-controls="navPrincipal" aria-expanded="false"
+              aria-label="Abrir menu de navegacion">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navPrincipal" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#formulario">Formulario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">Preguntas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ubicacion">Ubicacion</a>
+          </li>
+        </ul>
       </div>
-      <!-- Navegacion principal -->
-      <nav class="site-nav" aria-label="Navegacion principal">
-        <ul class="nav-list">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="#formulario">Formulario</a></li>
-          <li><a href="#faq">Preguntas</a></li>
-          <li><a href="#ubicacion">Ubicacion</a></li>
-          <li><a href="#ambiente">Musica</a></li>
-        </ul>
-      </nav>
-      <!-- Identificador de la entrega -->
-      <p class="site-tagline">PreEntrega1Cornejo</p>
-    </header>
+    </div>
+  </nav>
 
-    <main>
-      <!-- Seccion contacto: formulario principal -->
-      <section id="formulario" class="contact-section">
-        <h1>Contacto</h1>
-        <!-- Texto introductorio -->
-        <p>Escribinos para reservas, eventos o consultas generales.</p>
-        <!-- Mail directo para contacto rapido -->
-        <p>Mail directo: <a href="mailto:hola@cafearaura.com">hola@cafearaura.com</a></p>
-        <!-- Formulario estructurado con fieldset y legend -->
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Datos de contacto</legend>
-            <!-- Etiqueta + input para nombre -->
-            <label for="nombre">Nombre y apellido</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+  <main>
 
-            <!-- Etiqueta + input para email -->
-            <label for="email">Correo</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com">
+    <!-- Formulario de contacto -->
+    <section id="formulario" class="section-aurora">
+      <div class="container">
+        <h1 class="section-title">Contacto</h1>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <p class="text-center mb-4">Escribinos para reservas, eventos o consultas generales. Tambien podes enviarnos un mail directo a <a href="mailto:hola@cafeaurora.com">hola@cafeaurora.com</a>.</p>
 
-            <!-- Selector del motivo -->
-            <label for="motivo">Motivo</label>
-            <select id="motivo" name="motivo">
-              <option value="reserva">Reserva</option>
-              <option value="evento">Evento</option>
-              <option value="consulta">Consulta general</option>
-            </select>
+            <form action="#" method="post" class="form-aurora">
+              <fieldset>
+                <legend class="visually-hidden">Datos de contacto</legend>
 
-            <!-- Campo amplio para el mensaje -->
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="30" placeholder="Contanos tu idea"></textarea>
-          </fieldset>
-          <!-- Boton de envio -->
-          <p><button type="submit">Enviar</button></p>
-        </form>
-      </section>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre y apellido</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre"
+                         placeholder="Tu nombre" required>
+                </div>
 
-      <!-- Seccion preguntas: respuestas desplegables -->
-      <section id="faq" class="faq-section">
-        <h2>Preguntas frecuentes</h2>
-        <!-- Item de FAQ 1 -->
-        <details>
-          <summary>Se puede reservar mesa?</summary>
-          <p>Si, realizamos reservas con 24 horas de anticipacion.</p>
-        </details>
-        <!-- Item de FAQ 2 -->
-        <details>
-          <summary>Tienen opciones sin cafe?</summary>
-          <p>Ofrecemos te, jugos naturales y infusiones de temporada.</p>
-        </details>
-      </section>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo electronico</label>
+                  <input type="email" class="form-control" id="email" name="email"
+                         placeholder="tu@email.com" required>
+                </div>
 
-      <!-- Seccion ubicacion: foto y horarios -->
-      <section id="ubicacion" class="location-section">
-        <h2>Donde estamos</h2>
-        <!-- Imagen con credito del local -->
-        <figure>
-          <img src="../img/local.jpg" alt="Personas en cafeteria">
-          <figcaption>
-            Zona centro, cerca de la plaza principal. Foto: <a href="https://www.freepik.es/foto-gratis/gente-cafeteria_3276284.htm">Freepik</a>
-          </figcaption>
-        </figure>
-        <h3>Horarios</h3>
-        <!-- Lista de horarios por dia -->
-        <ul class="info-list">
-          <li>Lunes a viernes: 08:00 a 20:00</li>
-          <li>Sabados: 09:00 a 21:00</li>
-          <li>Domingos: 10:00 a 18:00</li>
-        </ul>
-      </section>
+                <div class="mb-3">
+                  <label for="telefono" class="form-label">Telefono (opcional)</label>
+                  <input type="tel" class="form-control" id="telefono" name="telefono"
+                         placeholder="(011) 555-0000">
+                </div>
 
-      <!-- Seccion ambiente: audio local -->
-      <section id="ambiente" class="ambience">
-        <h2>Musica del local</h2>
-        <p>Una seleccion suave para acompanar el momento del cafe.</p>
-        <!-- Audio local con autoplay (puede requerir interaccion del usuario) -->
-        <audio controls autoplay loop preload="auto">
-          <source src="../img/ambiente.mp3" type="audio/mpeg">
-          Tu navegador no soporta audio.
-        </audio>
-        <!-- Credito de la pista musical -->
-        <p class="music-credit">Musica: "Autumn Is Coming (Piano)" - Monument_Music (Pixabay).</p>
-        <!-- Enlace a la fuente de musica -->
-        <p><a href="https://pixabay.com/music/">Mas musica en Pixabay</a></p>
-      </section>
-    </main>
+                <div class="mb-3">
+                  <label for="motivo" class="form-label">Motivo</label>
+                  <select class="form-select" id="motivo" name="motivo" required>
+                    <option value="" selected disabled>Selecciona un motivo</option>
+                    <option value="reserva">Reserva de mesa</option>
+                    <option value="evento">Evento privado</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="sugerencia">Sugerencia</option>
+                  </select>
+                </div>
 
-    <footer class="site-footer">
-      <!-- Texto final y direccion -->
-      <p>Seguinos en nuestras redes y visita el local.</p>
-      <!-- Credito general de imagenes -->
-      <p class="credits">Imagenes: Freepik.</p>
-      <address>
-        Av. Principal 123, Ciudad - Tel: (011) 555-1234
-      </address>
-    </footer>
-  </body>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="5"
+                            placeholder="Contanos tu idea o consulta" required></textarea>
+                </div>
+
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                  <label class="form-check-label" for="newsletter"
+                         style="text-transform: none; letter-spacing: normal; font-weight: 400;">
+                    Quiero recibir novedades por correo
+                  </label>
+                </div>
+
+              </fieldset>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-aurora">Enviar mensaje</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preguntas frecuentes — Accordion -->
+    <section id="faq" class="section-aurora section-aurora--alt">
+      <div class="container">
+        <h2 class="section-title">Preguntas frecuentes</h2>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <div class="accordion accordion-aurora" id="accordionFaq">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#faq1"
+                          aria-expanded="false" aria-controls="faq1">
+                    Se puede reservar mesa?
+                  </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    Si, realizamos reservas con 24 horas de anticipacion. Podes escribirnos por el formulario de arriba o llamar directamente al local.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#faq2"
+                          aria-expanded="false" aria-controls="faq2">
+                    Tienen opciones sin cafe?
+                  </button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    Ofrecemos te, jugos naturales e infusiones de temporada. Consulta nuestra <a href="menu.html">carta completa</a> para ver las opciones disponibles.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#faq3"
+                          aria-expanded="false" aria-controls="faq3">
+                    Hacen eventos privados?
+                  </button>
+                </h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    Si, tenemos un espacio para eventos de hasta 25 personas. Escribinos con los detalles de tu evento y te armamos una propuesta a medida.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#faq4"
+                          aria-expanded="false" aria-controls="faq4">
+                    Aceptan medios de pago digitales?
+                  </button>
+                </h3>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    Aceptamos efectivo, tarjetas de debito y credito, y billeteras virtuales como Mercado Pago.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ubicacion -->
+    <section id="ubicacion" class="section-aurora">
+      <div class="container">
+        <h2 class="section-title">Donde estamos</h2>
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-md-6">
+            <figure class="mb-0">
+              <img src="../img/local.jpg" class="img-fluid rounded" alt="Personas en cafeteria">
+              <figcaption class="text-center mt-2">
+                Zona centro, cerca de la plaza principal. Foto: <a href="https://www.freepik.es/foto-gratis/gente-cafeteria_3276284.htm">Freepik</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3>Horarios</h3>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item bg-transparent d-flex justify-content-between">
+                <span>Lunes a viernes</span>
+                <span class="text-muted-aurora">08:00 a 20:00</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between">
+                <span>Sabados</span>
+                <span class="text-muted-aurora">09:00 a 21:00</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between">
+                <span>Domingos</span>
+                <span class="text-muted-aurora">10:00 a 18:00</span>
+              </li>
+            </ul>
+            <address>
+              <p><strong>Direccion:</strong> Av. Principal 123, Ciudad</p>
+              <p><strong>Telefono:</strong> (011) 555-1234</p>
+              <p><strong>Email:</strong> <a href="mailto:hola@cafeaurora.com">hola@cafeaurora.com</a></p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-aurora">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h5>Cafe Aurora</h5>
+          <p>Un espacio calido para compartir cafe de especialidad, pasteleria artesanal y buena musica.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5>Navegacion</h5>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5>Contacto</h5>
+          <address>
+            <p>Av. Principal 123, Ciudad</p>
+            <p>Tel: (011) 555-1234</p>
+            <p><a href="mailto:hola@cafeaurora.com">hola@cafeaurora.com</a></p>
+          </address>
+        </div>
+      </div>
+      <hr>
+      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik. Musica: Pixabay.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>
