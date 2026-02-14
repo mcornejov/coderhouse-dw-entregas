@@ -1,155 +1,254 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Metadatos base para compatibilidad y responsive -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titulo de la pagina -->
-    <title>PreEntrega1Cornejo - Menu</title>
-    <!-- Hoja de estilos principal -->
-    <link rel="stylesheet" href="../css/styles.css">
-  </head>
-  <body>
-    <!-- Comentarios activados: PreEntrega 1 -->
-    <!-- Encabezado con marca y navegacion -->
-    <header class="site-header">
-      <!-- Marca del local: logo + nombre -->
-      <div class="brand">
-        <a class="brand-link" href="../index.html">
-          <img src="../img/logo.svg" alt="Logo Cafe Aurora">
-        </a>
-        <p class="brand-name">Cafe Aurora</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Aurora - Menu</title>
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Navegacion -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-aurora sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo.svg" alt="Logo Cafe Aurora" height="36">
+        Cafe Aurora
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+              aria-controls="navPrincipal" aria-expanded="false"
+              aria-label="Abrir menu de navegacion">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navPrincipal" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cafes">Cafes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pasteleria">Pasteleria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#origenes">Origenes</a>
+          </li>
+        </ul>
       </div>
-      <!-- Enlaces a secciones y paginas -->
-      <nav class="site-nav" aria-label="Navegacion principal">
-        <ul class="nav-list">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="#cafes">Cafes</a></li>
-          <li><a href="#pasteleria">Pasteleria</a></li>
-          <li><a href="#origenes">Origenes</a></li>
-          <li><a href="#maridajes">Maridajes</a></li>
-          <li><a href="#recomendados">Recomendados</a></li>
-          <li><a href="#ambiente">Musica</a></li>
-        </ul>
-      </nav>
-      <!-- Identificador de la entrega -->
-      <p class="site-tagline">PreEntrega1Cornejo</p>
-    </header>
+    </div>
+  </nav>
 
-    <main>
-      <!-- Seccion introduccion: titulo y descripcion breve -->
-      <section class="menu-intro">
-        <h1>Menu de temporada</h1>
-        <p>Sabores equilibrados y opciones para cada momento del dia.</p>
-      </section>
+  <main>
 
-      <!-- Seccion cafes: lista + metodos + imagen -->
-      <section id="cafes" class="menu-section">
-        <h2>Cafes</h2>
-        <!-- Lista simple de productos -->
-        <ul class="menu-list">
-          <li>Espresso simple</li>
-          <li>Latte vainilla</li>
-          <li>Flat white</li>
-          <li>Cold brew</li>
-        </ul>
-        <!-- Texto de apoyo con metodos -->
-        <p>Metodos disponibles: prensa francesa, aeropress y V60.</p>
-        <!-- Imagen referencial con credito -->
-        <figure class="menu-figure">
-          <img src="../img/producto-1.jpg" alt="Capuccino con pastel">
-          <figcaption>
-            Cafe y pasteleria. Foto: <a href="https://www.freepik.es/foto-gratis/primer-plano-taza-cafe-capuchino-pastel-chocolate_6117711.htm">Freepik</a>
-          </figcaption>
-        </figure>
-      </section>
+    <!-- Introduccion -->
+    <section class="section-aurora text-center">
+      <div class="container">
+        <h1 class="section-title">Menu de temporada</h1>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <p class="lead text-muted-aurora">Sabores equilibrados y opciones para cada momento del dia. Trabajamos con granos de origen y productos frescos de estacion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Seccion pasteleria: lista + imagen -->
-      <section id="pasteleria" class="menu-section">
-        <h2>Pasteleria artesanal</h2>
-        <!-- Lista de opciones dulces -->
-        <ul class="menu-list">
-          <li>Brownie de cacao</li>
-          <li>Cookie de avena</li>
-          <li>Tarta de limon</li>
-          <li>Budin de naranja</li>
-        </ul>
-        <!-- Imagen con credito -->
-        <figure>
-          <img src="../img/producto-2.jpg" alt="Pasteleria con cafe sobre mesa de madera">
-          <figcaption>
-            Seleccion del dia. Foto: <a href="https://www.freepik.es/foto-gratis/freshly-baked-pastry-with-cup-of-coffee-on-wooden-table_3039265.htm">Freepik</a>
-          </figcaption>
-        </figure>
-      </section>
+    <!-- Cafes -->
+    <section id="cafes" class="section-aurora section-aurora--alt">
+      <div class="container">
+        <h2 class="section-title">Cafes</h2>
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-md-6">
+            <figure class="mb-0">
+              <img src="../img/producto-1.jpg" class="img-fluid rounded" alt="Capuccino con pastel de chocolate">
+              <figcaption class="text-center mt-2">
+                Cafe y pasteleria. Foto: <a href="https://www.freepik.es/foto-gratis/primer-plano-taza-cafe-capuchino-pastel-chocolate_6117711.htm">Freepik</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent">Espresso simple</li>
+              <li class="list-group-item bg-transparent">Latte vainilla</li>
+              <li class="list-group-item bg-transparent">Flat white</li>
+              <li class="list-group-item bg-transparent">Cold brew</li>
+              <li class="list-group-item bg-transparent">Capuccino clasico</li>
+            </ul>
+            <p class="mt-3 text-muted-aurora">Metodos disponibles: prensa francesa, aeropress y V60.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Seccion origenes: definiciones por origen -->
-      <section id="origenes" class="menu-section">
-        <h2>Origenes y notas</h2>
-        <!-- Lista de definicion: origen (dt) + notas (dd) -->
-        <dl class="origin-list">
-          <dt>Colombia</dt>
-          <dd>Chocolate, caramelo y final dulce.</dd>
-          <dt>Brasil</dt>
-          <dd>Nueces tostadas y cuerpo redondo.</dd>
-          <dt>Etiopia</dt>
-          <dd>Frutas rojas y perfume floral.</dd>
-        </dl>
-      </section>
+    <!-- Pasteleria -->
+    <section id="pasteleria" class="section-aurora">
+      <div class="container">
+        <h2 class="section-title">Pasteleria artesanal</h2>
+        <div class="row g-4 align-items-center">
+          <!-- Imagen a la derecha en desktop -->
+          <div class="col-12 col-md-6 order-md-2">
+            <figure class="mb-0">
+              <img src="../img/producto-2.jpg" class="img-fluid rounded" alt="Pasteleria con cafe sobre mesa de madera">
+              <figcaption class="text-center mt-2">
+                Seleccion del dia. Foto: <a href="https://www.freepik.es/foto-gratis/freshly-baked-pastry-with-cup-of-coffee-on-wooden-table_3039265.htm">Freepik</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 order-md-1">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent">Brownie de cacao</li>
+              <li class="list-group-item bg-transparent">Cookie de avena</li>
+              <li class="list-group-item bg-transparent">Tarta de limon</li>
+              <li class="list-group-item bg-transparent">Budin de naranja</li>
+              <li class="list-group-item bg-transparent">Croissant de manteca</li>
+            </ul>
+            <p class="mt-3 text-muted-aurora">Elaboracion diaria con ingredientes de estacion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Seccion maridajes: combinaciones sugeridas -->
-      <section id="maridajes" class="menu-section">
-        <h2>Maridajes sugeridos</h2>
-        <!-- Lista simple de pares -->
-        <ul class="menu-list">
-          <li>Capuccino + brownie de cacao</li>
-          <li>Flat white + cookie de avena</li>
-          <li>Cold brew + tarta de limon</li>
-        </ul>
-      </section>
+    <!-- Origenes -->
+    <section id="origenes" class="section-aurora section-aurora--alt">
+      <div class="container">
+        <h2 class="section-title">Origenes y notas</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="card card-aurora text-center p-3">
+              <div class="card-body">
+                <h3 class="card-title">Colombia</h3>
+                <p class="card-text">Chocolate, caramelo y final dulce. Nuestro origen principal y el mas pedido en barra.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card card-aurora text-center p-3">
+              <div class="card-body">
+                <h3 class="card-title">Brasil</h3>
+                <p class="card-text">Nueces tostadas y cuerpo redondo. Ideal para quienes prefieren sabores intensos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card card-aurora text-center p-3">
+              <div class="card-body">
+                <h3 class="card-title">Etiopia</h3>
+                <p class="card-text">Frutas rojas y perfume floral. Un cafe con caracter y personalidad unica.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Seccion recomendados: proceso del barista -->
-      <section class="menu-section" id="recomendados">
-        <h2>Recomendados del barista</h2>
-        <!-- Articulo con pasos -->
-        <article>
-          <h3>Como preparamos nuestro cafe filtrado</h3>
-          <!-- Lista ordenada con el proceso -->
-          <ol class="steps-list">
-            <li>Seleccion del grano y molienda fina.</li>
-            <li>Pre infusion de 30 segundos.</li>
-            <li>Vertido lento y constante.</li>
-            <li>Reposo y servicio inmediato.</li>
-          </ol>
-        </article>
-      </section>
+    <!-- Maridajes -->
+    <section id="maridajes" class="section-aurora">
+      <div class="container">
+        <h2 class="section-title">Maridajes sugeridos</h2>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Cafe</th>
+                    <th scope="col">Acompanamiento</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Capuccino</td>
+                    <td>Brownie de cacao</td>
+                  </tr>
+                  <tr>
+                    <td>Flat white</td>
+                    <td>Cookie de avena</td>
+                  </tr>
+                  <tr>
+                    <td>Cold brew</td>
+                    <td>Tarta de limon</td>
+                  </tr>
+                  <tr>
+                    <td>Espresso</td>
+                    <td>Croissant de manteca</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Seccion ambiente: audio local -->
-      <section id="ambiente" class="ambience">
-        <h2>Musica del local</h2>
-        <p>Una seleccion suave para acompanar el momento del cafe.</p>
-        <!-- Audio local con autoplay (puede requerir interaccion del usuario) -->
-        <audio controls autoplay loop preload="auto">
-          <source src="../img/ambiente.mp3" type="audio/mpeg">
-          Tu navegador no soporta audio.
-        </audio>
-        <!-- Credito de la pista musical -->
-        <p class="music-credit">Musica: "Autumn Is Coming (Piano)" - Monument_Music (Pixabay).</p>
-        <!-- Enlace a la fuente -->
-        <p><a href="https://pixabay.com/music/">Mas musica en Pixabay</a></p>
-      </section>
-    </main>
+    <!-- Recomendados del barista -->
+    <section id="recomendados" class="section-aurora section-aurora--alt">
+      <div class="container">
+        <h2 class="section-title">Recomendados del barista</h2>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <article>
+              <h3>Como preparamos nuestro cafe filtrado</h3>
+              <ol class="list-group list-group-numbered mt-3">
+                <li class="list-group-item bg-transparent">Seleccion del grano y molienda fresca al momento.</li>
+                <li class="list-group-item bg-transparent">Pre-infusion de 30 segundos para liberar aromas.</li>
+                <li class="list-group-item bg-transparent">Vertido lento y constante en circulos concentricos.</li>
+                <li class="list-group-item bg-transparent">Reposo breve y servicio inmediato en taza precalentada.</li>
+              </ol>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer class="site-footer">
-      <!-- Texto final y datos de contacto -->
-      <p>Consulta disponibilidad en el local o por mensaje.</p>
-      <!-- Credito general de imagenes -->
-      <p class="credits">Imagenes: Freepik.</p>
-      <address>
-        Av. Principal 123, Ciudad - Tel: (011) 555-1234
-      </address>
-    </footer>
-  </body>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-aurora">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h5>Cafe Aurora</h5>
+          <p>Un espacio calido para compartir cafe de especialidad, pasteleria artesanal y buena musica.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5>Navegacion</h5>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5>Contacto</h5>
+          <address>
+            <p>Av. Principal 123, Ciudad</p>
+            <p>Tel: (011) 555-1234</p>
+            <p><a href="mailto:hola@cafeaurora.com">hola@cafeaurora.com</a></p>
+          </address>
+        </div>
+      </div>
+      <hr>
+      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik. Musica: Pixabay.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>
