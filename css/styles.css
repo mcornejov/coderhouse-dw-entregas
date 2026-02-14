@@ -1,240 +1,554 @@
-/* Comentarios activados: PreEntrega 1 */
-/* Variables de color para mantener coherencia visual */
+/* ==========================================
+   Cafe Aurora — Estilos personalizados
+   Complemento a Bootstrap 5.3
+   ========================================== */
+
+/* --- Variables del proyecto --- */
 :root {
-  --bg: #f7f0e6;
-  --surface: #fff6ea;
-  --ink: #3a2a1f;
-  --accent: #c75a2a;
-  --accent-2: #2b6f68;
-  --muted: #6e5a4f;
+  --ca-primary: #c75a2a;
+  --ca-primary-dark: #a34820;
+  --ca-secondary: #2b6f68;
+  --ca-secondary-dark: #1e524d;
+  --ca-bg: #f7f0e6;
+  --ca-surface: #fff6ea;
+  --ca-ink: #3a2a1f;
+  --ca-muted: #6e5a4f;
+  --ca-border: #e0d5c8;
+  --ca-white: #ffffff;
+  --ca-font-heading: 'Playfair Display', Georgia, serif;
+  --ca-font-body: 'Lato', 'Helvetica Neue', sans-serif;
 }
 
-/* Reset basico para quitar margenes y padding por defecto */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Desplazamiento suave para anclas internas */
+/* --- Base --- */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
-/* Estilos base del body: tipografia y fondo */
 body {
-  font-family: "Garamond", "Georgia", serif;
-  color: var(--ink);
-  line-height: 1.6;
-  background-color: var(--bg);
-  background-image: linear-gradient(135deg, #f7f0e6 0%, #efe2d1 45%, #f9f4ed 100%);
+  font-family: var(--ca-font-body);
+  color: var(--ca-ink);
+  background-color: var(--ca-bg);
+  line-height: 1.7;
 }
 
-/* Contenedores principales con fondo suave */
-.site-header,
-.site-footer {
-  background-color: var(--surface);
-  text-align: center;
+/* --- Tipografia --- */
+h1, h2, h3, h4, h5 {
+  font-family: var(--ca-font-heading);
+  color: var(--ca-primary);
 }
 
-/* Animacion simple al cargar el header */
-.site-header {
-  animation: fadeIn 0.8s ease-out;
-}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.75rem; margin-bottom: 1rem; }
+h3 { font-size: 1.25rem; }
 
-/* Animacion suave para el contenido principal */
-main {
-  animation: fadeIn 0.9s ease-out;
-}
-
-/* Jerarquia de titulos con estilo consistente */
-h1,
-h2,
-h3 {
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Tamanos base de los titulos */
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.4rem;
-}
-
-h3 {
-  font-size: 1.1rem;
-}
-
-/* Texto general */
 p {
-  font-size: 1rem;
+  margin-bottom: 0.75rem;
 }
 
-/* Identidad de marca */
-.brand-name {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/* Tagline con color secundario */
-.site-tagline {
-  color: var(--accent-2);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 0.85rem;
-}
-
-/* Estilos para enlaces */
 a {
-  color: var(--accent);
+  color: var(--ca-primary);
   text-decoration: none;
-  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 a:hover {
+  color: var(--ca-primary-dark);
   text-decoration: underline;
 }
 
-/* Estilo del llamado a la accion */
-.cta-link {
+/* --- Navbar --- */
+.navbar-aurora {
+  background-color: var(--ca-surface);
+  box-shadow: 0 2px 8px rgba(58, 42, 31, 0.08);
+}
+
+.navbar-aurora .navbar-brand {
+  font-family: var(--ca-font-heading);
+  font-weight: 700;
+  color: var(--ca-primary);
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-aurora .navbar-brand:hover {
+  color: var(--ca-primary-dark);
+  text-decoration: none;
+}
+
+.navbar-aurora .navbar-brand img {
+  height: 36px;
+  width: auto;
+}
+
+.navbar-aurora .nav-link {
+  color: var(--ca-ink);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  padding: 0.5rem 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-aurora .nav-link:hover,
+.navbar-aurora .nav-link:focus-visible {
+  color: var(--ca-primary);
+}
+
+.navbar-aurora .nav-link.active {
+  color: var(--ca-primary);
+  font-weight: 700;
+}
+
+/* --- Hero — Carousel --- */
+.hero-carousel .carousel-item {
+  height: 75vh;
+  min-height: 400px;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.hero-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.hero-carousel .carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-carousel .carousel-caption h1 {
+  color: var(--ca-white);
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-carousel .carousel-caption p {
+  color: var(--ca-white);
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+/* --- Secciones generales --- */
+.section-aurora {
+  padding: 4rem 0;
+}
+
+.section-aurora--alt {
+  background-color: var(--ca-surface);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--ca-primary);
+  margin: 0.75rem auto 0;
+}
+
+/* --- Cards --- */
+.card-aurora {
+  border: 1px solid var(--ca-border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--ca-white);
+  height: 100%;
+}
+
+.card-aurora:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(58, 42, 31, 0.12);
+}
+
+.card-aurora .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-aurora .card-body {
+  padding: 1.5rem;
+}
+
+.card-aurora .card-title {
+  font-family: var(--ca-font-heading);
+  color: var(--ca-primary);
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-aurora .card-text {
+  color: var(--ca-muted);
+  font-size: 0.95rem;
+}
+
+/* --- Botones propios --- */
+.btn-aurora {
+  background-color: var(--ca-primary);
+  color: var(--ca-white);
+  border: 2px solid var(--ca-primary);
+  padding: 0.6rem 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-aurora:hover {
+  background-color: var(--ca-primary-dark);
+  border-color: var(--ca-primary-dark);
+  color: var(--ca-white);
+  text-decoration: none;
+}
+
+.btn-aurora:active {
+  transform: scale(0.97);
+}
+
+.btn-aurora:focus-visible {
+  outline: 3px solid var(--ca-primary);
+  outline-offset: 2px;
+}
+
+.btn-aurora--outline {
+  background-color: transparent;
+  color: var(--ca-primary);
+  border: 2px solid var(--ca-primary);
+}
+
+.btn-aurora--outline:hover {
+  background-color: var(--ca-primary);
+  color: var(--ca-white);
+}
+
+.btn-aurora--secondary {
+  background-color: var(--ca-secondary);
+  border-color: var(--ca-secondary);
+}
+
+.btn-aurora--secondary:hover {
+  background-color: var(--ca-secondary-dark);
+  border-color: var(--ca-secondary-dark);
+}
+
+/* --- Cita de marca --- */
+.blockquote-aurora {
+  border-left: 4px solid var(--ca-primary);
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  background-color: var(--ca-surface);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: var(--ca-muted);
+}
+
+.blockquote-aurora footer {
+  font-style: normal;
+  color: var(--ca-secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* --- Formulario --- */
+.form-aurora .form-control,
+.form-aurora .form-select {
+  border: 1px solid var(--ca-border);
+  border-radius: 4px;
+  font-family: var(--ca-font-body);
+  color: var(--ca-ink);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-aurora .form-control:focus,
+.form-aurora .form-select:focus {
+  border-color: var(--ca-primary);
+  box-shadow: 0 0 0 0.2rem rgba(199, 90, 42, 0.15);
+}
+
+/* Pseudoclase :required — indicador visual en campos obligatorios */
+.form-aurora .form-control:required,
+.form-aurora .form-select:required {
+  border-left: 3px solid var(--ca-primary);
+}
+
+.form-aurora label {
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 0.85rem;
+  color: var(--ca-ink);
+  margin-bottom: 0.25rem;
 }
 
-/* Secciones con texto centrado */
-.hero,
-.menu-intro,
-.ambience,
-.experience {
-  text-align: center;
+/* --- Accordion — FAQ --- */
+.accordion-aurora .accordion-button {
+  font-family: var(--ca-font-heading);
+  font-weight: 600;
+  color: var(--ca-ink);
+  background-color: var(--ca-surface);
+  font-size: 1rem;
 }
 
-/* Navegacion sin vinetas y en mayusculas */
-.nav-list {
-  list-style-type: none;
+.accordion-aurora .accordion-button:not(.collapsed) {
+  background-color: var(--ca-bg);
+  color: var(--ca-primary);
+  box-shadow: none;
+}
+
+.accordion-aurora .accordion-button:focus {
+  border-color: var(--ca-primary);
+  box-shadow: 0 0 0 0.2rem rgba(199, 90, 42, 0.15);
+}
+
+.accordion-aurora .accordion-body {
+  color: var(--ca-muted);
+  line-height: 1.8;
+}
+
+/* --- Footer --- */
+.footer-aurora {
+  background-color: var(--ca-ink);
+  color: var(--ca-bg);
+  padding: 3rem 0 1.5rem;
+}
+
+.footer-aurora h5 {
+  color: var(--ca-primary);
+  font-family: var(--ca-font-heading);
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
-/* Centrado de figuras y fotos */
-figure {
+.footer-aurora p,
+.footer-aurora li {
+  color: rgba(247, 240, 230, 0.75);
+  font-size: 0.9rem;
+}
+
+.footer-aurora a {
+  color: var(--ca-primary);
+  text-decoration: none;
+}
+
+.footer-aurora a:hover {
+  color: var(--ca-white);
+  text-decoration: underline;
+}
+
+.footer-aurora ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-aurora ul li {
+  margin-bottom: 0.35rem;
+}
+
+.footer-aurora address {
+  font-style: normal;
+}
+
+.footer-aurora hr {
+  border-color: rgba(247, 240, 230, 0.15);
+}
+
+.footer__copy {
   text-align: center;
+  font-size: 0.8rem;
+  color: rgba(247, 240, 230, 0.5);
+  margin-top: 1rem;
 }
 
-/* Tipos de listas segun contexto */
-.menu-list {
-  list-style-type: square;
+/* --- Aside lateral (datos rapidos) --- */
+.aside-aurora {
+  background-color: var(--ca-surface);
+  border: 1px solid var(--ca-border);
+  border-radius: 8px;
+  padding: 1.5rem;
 }
 
-.steps-list {
-  list-style-type: decimal;
+.aside-aurora h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
 }
 
-.info-list {
+.aside-aurora ul {
   list-style-type: circle;
+  padding-left: 1.25rem;
 }
 
-/* Texto auxiliar bajo imagenes */
-figcaption {
-  color: var(--muted);
+.aside-aurora li {
+  color: var(--ca-muted);
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
+/* --- Tabla de maridajes --- */
+.table thead th {
+  background-color: var(--ca-surface);
+  color: var(--ca-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: var(--ca-font-heading);
+  font-size: 0.9rem;
+  border-bottom: 2px solid var(--ca-primary);
+}
+
+/* Pseudoclase :nth-child — filas pares con fondo alternado */
+.table tbody tr:nth-child(even) {
+  background-color: rgba(247, 240, 230, 0.5);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(199, 90, 42, 0.06);
+}
+
+/* --- Lista de items (menu) --- */
+.list-group-item {
+  border-color: var(--ca-border);
+  color: var(--ca-ink);
+  font-size: 0.95rem;
+}
+
+/* Pseudoclase :last-child — quitar borde inferior en el ultimo item */
+.list-group-flush .list-group-item:last-child {
+  border-bottom: none;
+}
+
+/* --- Musica --- */
+.music-section audio {
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+  display: block;
+}
+
+.music-credit {
+  color: var(--ca-muted);
   font-style: italic;
   font-size: 0.9rem;
 }
 
-/* Credito de musica */
-.music-credit {
-  color: var(--muted);
+/* --- Figcaption --- */
+figcaption {
+  color: var(--ca-muted);
   font-style: italic;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
 }
 
-/* Cita de marca */
-blockquote {
-  color: var(--muted);
-  font-style: italic;
-  text-align: center;
+/* --- Utilidades propias --- */
+.text-aurora {
+  color: var(--ca-primary);
 }
 
-/* Firma de la cita */
-.quote-author {
-  color: var(--accent-2);
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.text-muted-aurora {
+  color: var(--ca-muted);
 }
 
-/* Lista de origenes en formato definicion */
-.origin-list dt {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.origin-list dd {
-  color: var(--muted);
-  font-style: italic;
-}
-
-/* Elementos desplegables del FAQ */
-summary {
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-details {
-  color: var(--muted);
-}
-
-/* Direccion sin cursiva */
-address {
-  font-style: normal;
-  color: var(--muted);
-}
-
-/* Controles de formulario con fuente heredada */
-input,
-select,
-textarea {
-  font-family: inherit;
-  color: var(--ink);
-  background-color: #ffffff;
-}
-
-/* Etiquetas de formulario */
-label {
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Boton principal */
-button {
-  background-color: var(--accent);
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
-
-/* Creditos en el footer */
-.credits {
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.8rem;
-}
-
-/* Animacion reutilizable */
-@keyframes fadeIn {
+/* --- Animaciones --- */
+@keyframes fadeInUp {
   from {
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .hero-carousel .carousel-item {
+    height: 50vh;
+    min-height: 300px;
+  }
+
+  .hero-carousel .carousel-caption h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-carousel .carousel-caption p {
+    font-size: 0.95rem;
+  }
+
+  .section-aurora {
+    padding: 2.5rem 0;
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.35rem; }
+
+  .blockquote-aurora {
+    padding: 1rem 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-carousel .carousel-item {
+    height: 40vh;
+    min-height: 250px;
+  }
+
+  .hero-carousel .carousel-caption h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-carousel .carousel-caption p {
+    font-size: 0.85rem;
+  }
+
+  .section-aurora {
+    padding: 2rem 0;
+  }
+
+  .navbar-aurora .navbar-brand {
+    font-size: 1.1rem;
+  }
+}
+
+/* Usuarios que prefieren menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
   }
 }
