@@ -55,6 +55,7 @@
 
     <!-- Hero — Carousel -->
     <section id="inicio">
+      <h1 class="visually-hidden">Cafe Aurora — Cafe de especialidad y pasteleria artesanal</h1>
       <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="false">
         <!-- Indicadores -->
         <div class="carousel-indicators">
@@ -70,25 +71,25 @@
           <div class="carousel-item active">
             <img src="img/hero.jpg" class="d-block w-100" alt="Interior de cafeteria con mesas de madera">
             <div class="carousel-caption">
-              <h1>Bienvenidos a Cafe Aurora</h1>
+              <h2>Bienvenidos a Cafe Aurora</h2>
               <p>Un espacio calido para compartir cafe de especialidad y buena compania.</p>
-              <a href="pages/menu.html" class="btn btn-aurora mt-2">Ver menu</a>
+              <a href="pages/menu.html" class="btn btn-aurora">Ver menu</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/local.jpg" class="d-block w-100" alt="Personas disfrutando en cafeteria">
             <div class="carousel-caption">
-              <h1>Un lugar para compartir</h1>
+              <h2>Un lugar para compartir</h2>
               <p>Nacimos en el barrio con la idea de crear un punto de encuentro.</p>
-              <a href="#sobre" class="btn btn-aurora mt-2">Conocenos</a>
+              <a href="#sobre" class="btn btn-aurora">Conocenos</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/producto-1.jpg" class="d-block w-100" alt="Capuccino con pastel de chocolate">
             <div class="carousel-caption">
-              <h1>Cafe de especialidad</h1>
+              <h2>Cafe de especialidad</h2>
               <p>Seleccionamos granos con perfiles dulces y tostados medios.</p>
-              <a href="#especialidades" class="btn btn-aurora mt-2">Especialidades</a>
+              <a href="#especialidades" class="btn btn-aurora">Especialidades</a>
             </div>
           </div>
         </div>
@@ -108,25 +109,21 @@
     <section id="sobre" class="section-aurora">
       <div class="container">
         <h2 class="section-title">Sobre nosotros</h2>
-        <div class="row g-4 align-items-start">
-          <div class="col-12 col-md-8">
-            <article class="fade-in-up">
-              <p>Nacimos en el barrio con la idea de crear un punto de encuentro para quienes disfrutan el cafe bien hecho. Trabajamos con productores locales y buscamos un servicio simple y cercano.</p>
-              <p>Cada taza es el resultado de un proceso cuidadoso: desde la seleccion del grano hasta el metodo de preparacion. Nos gusta lo artesanal, lo pausado y lo genuino.</p>
-              <a href="pages/contacto.html" class="btn btn-aurora--outline btn-aurora mt-3">Escribinos</a>
-            </article>
-          </div>
-          <div class="col-12 col-md-4">
-            <aside class="aside-aurora">
-              <h3>Datos rapidos</h3>
-              <ul>
-                <li>Origen del cafe: Colombia</li>
-                <li>Tueste: Medio</li>
-                <li>Metodo favorito: V60</li>
-                <li>Fundado: 2023</li>
-              </ul>
-            </aside>
-          </div>
+        <div class="grid-aurora grid-aurora--sidebar">
+          <article class="fade-in-up">
+            <p>Nacimos en el barrio con la idea de crear un punto de encuentro para quienes disfrutan el cafe bien hecho. Trabajamos con productores locales y buscamos un servicio simple y cercano.</p>
+            <p>Cada taza es el resultado de un proceso cuidadoso: desde la seleccion del grano hasta el metodo de preparacion. Nos gusta lo artesanal, lo pausado y lo genuino.</p>
+            <a href="pages/contacto.html" class="btn-aurora btn-aurora--outline">Escribinos</a>
+          </article>
+          <aside class="aside-aurora">
+            <h3>Datos rapidos</h3>
+            <ul>
+              <li>Origen del cafe: Colombia</li>
+              <li>Tueste: Medio</li>
+              <li>Metodo favorito: V60</li>
+              <li>Fundado: 2023</li>
+            </ul>
+          </aside>
         </div>
       </div>
     </section>
@@ -135,37 +132,31 @@
     <section id="especialidades" class="section-aurora section-aurora--alt">
       <div class="container">
         <h2 class="section-title">Especialidades de la casa</h2>
-        <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card card-aurora">
-              <img src="img/producto-1.jpg" class="card-img-top" alt="Capuccino con pastel de chocolate">
-              <div class="card-body">
-                <h3 class="card-title">Capuccino clasico</h3>
-                <p class="card-text">Espuma suave, cacao natural y cafe de origen unico. Nuestra version del clasico italiano.</p>
-                <a href="pages/menu.html#cafes" class="btn btn-aurora btn-sm">Ver en menu</a>
-              </div>
+        <div class="grid-aurora grid-aurora--3cols">
+          <article class="card-aurora">
+            <img src="img/producto-1.jpg" class="card-aurora__img" alt="Capuccino con pastel de chocolate">
+            <div class="card-aurora__body">
+              <h3 class="card-aurora__title">Capuccino clasico</h3>
+              <p class="card-aurora__text">Espuma suave, cacao natural y cafe de origen unico. Nuestra version del clasico italiano.</p>
+              <a href="pages/menu.html#cafes" class="btn-aurora">Ver en menu</a>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card card-aurora">
-              <img src="img/producto-2.jpg" class="card-img-top" alt="Pasteleria y cafe sobre mesa de madera">
-              <div class="card-body">
-                <h3 class="card-title">Tostado artesanal</h3>
-                <p class="card-text">Pan de masa madre, queso y vegetales frescos. El complemento perfecto para tu cafe.</p>
-                <a href="pages/menu.html#pasteleria" class="btn btn-aurora btn-sm">Ver en menu</a>
-              </div>
+          </article>
+          <article class="card-aurora">
+            <img src="img/producto-2.jpg" class="card-aurora__img" alt="Pasteleria y cafe sobre mesa de madera">
+            <div class="card-aurora__body">
+              <h3 class="card-aurora__title">Tostado artesanal</h3>
+              <p class="card-aurora__text">Pan de masa madre, queso y vegetales frescos. El complemento perfecto para tu cafe.</p>
+              <a href="pages/menu.html#pasteleria" class="btn-aurora">Ver en menu</a>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card card-aurora">
-              <img src="img/local.jpg" class="card-img-top" alt="Personas en cafeteria">
-              <div class="card-body">
-                <h3 class="card-title">Experiencia Aurora</h3>
-                <p class="card-text">Musica suave, mesas amplias y un ambiente pensado para que te quedes un rato mas.</p>
-                <a href="pages/contacto.html#ubicacion" class="btn btn-aurora btn-sm">Visitanos</a>
-              </div>
+          </article>
+          <article class="card-aurora">
+            <img src="img/local.jpg" class="card-aurora__img" alt="Personas en cafeteria">
+            <div class="card-aurora__body">
+              <h3 class="card-aurora__title">Experiencia Aurora</h3>
+              <p class="card-aurora__text">Musica suave, mesas amplias y un ambiente pensado para que te quedes un rato mas.</p>
+              <a href="pages/contacto.html#ubicacion" class="btn-aurora">Visitanos</a>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -174,8 +165,8 @@
     <section id="experiencia" class="section-aurora">
       <div class="container">
         <h2 class="section-title">Experiencia Aurora</h2>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 text-center">
+        <div class="flex-aurora flex-aurora--center">
+          <div style="max-width: 720px; text-align: center;">
             <p>Seleccionamos granos con perfiles dulces y tostados medios para lograr tazas equilibradas. Cada cafe es una invitacion a frenar y disfrutar.</p>
             <blockquote class="blockquote-aurora">
               <p>"El mejor cafe se comparte en calma, con una charla larga y una mesa simple."</p>
@@ -207,12 +198,12 @@
   <!-- Footer -->
   <footer class="footer-aurora">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-12 col-md-4">
+      <div class="grid-aurora grid-aurora--3cols">
+        <div>
           <h5>Cafe Aurora</h5>
           <p>Un espacio calido para compartir cafe de especialidad, pasteleria artesanal y buena musica.</p>
         </div>
-        <div class="col-12 col-md-4">
+        <div>
           <h5>Navegacion</h5>
           <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -220,7 +211,7 @@
             <li><a href="pages/contacto.html">Contacto</a></li>
           </ul>
         </div>
-        <div class="col-12 col-md-4">
+        <div>
           <h5>Contacto</h5>
           <address>
             <p>Av. Principal 123, Ciudad</p>
