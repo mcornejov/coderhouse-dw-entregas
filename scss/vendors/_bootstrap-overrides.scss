@@ -1,0 +1,23 @@
+// ==========================================
+//   Sobreescrituras de Bootstrap
+// ==========================================
+
+@use '../abstracts/variables' as *;
+
+// El sticky-top de Bootstrap necesita un z-index correcto
+.sticky-top {
+  z-index: 1030;
+}
+
+// Imagenes responsive propias (complementa .img-fluid)
+.img-responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: $border-radius;
+}
+
+// Rounded con nuestro border-radius
+.rounded-aurora {
+  border-radius: $border-radius;
+}

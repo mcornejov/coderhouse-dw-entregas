@@ -1,0 +1,71 @@
+// ==========================================
+@use 'sass:map';
+//   Hero Carousel (usa Bootstrap carousel)
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.hero-carousel {
+  .carousel-item {
+    height: 75vh;
+    min-height: 400px;
+    max-height: 700px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.5);
+    }
+  }
+
+  .carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+
+    h2 {
+      color: $ca-white;
+      font-size: map.get($font-sizes, "4xl");
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: $ca-white;
+      font-size: map.get($font-sizes, "lg");
+      opacity: 0.9;
+    }
+  }
+
+  @include respond-to("md") {
+    .carousel-item {
+      height: 50vh;
+      min-height: 300px;
+    }
+
+    .carousel-caption h2 {
+      font-size: map.get($font-sizes, "2xl");
+    }
+
+    .carousel-caption p {
+      font-size: map.get($font-sizes, "base");
+    }
+  }
+
+  @include respond-to("sm") {
+    .carousel-item {
+      height: 40vh;
+      min-height: 250px;
+    }
+
+    .carousel-caption h2 {
+      font-size: 1.4rem;
+    }
+
+    .carousel-caption p {
+      font-size: map.get($font-sizes, "sm");
+    }
+  }
+}

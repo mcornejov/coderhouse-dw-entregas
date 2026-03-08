@@ -1,0 +1,58 @@
+// ==========================================
+@use 'sass:map';
+//   Navbar (usa Bootstrap navbar como base)
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.navbar-aurora {
+  background-color: $ca-surface;
+  box-shadow: $shadow-light;
+
+  .navbar-brand {
+    font-family: $font-heading;
+    font-weight: 700;
+    color: $ca-primary;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &:hover {
+      color: $ca-primary-dark;
+      text-decoration: none;
+    }
+
+    img {
+      height: 36px;
+      width: auto;
+    }
+  }
+
+  .nav-link {
+    color: $ca-ink;
+    font-weight: 400;
+    @include uppercase-label(map.get($font-sizes, "sm"), 1px);
+    padding: 0.5rem 0.75rem;
+    transition: color $transition-base;
+
+    &:hover,
+    &:focus-visible {
+      color: $ca-primary;
+    }
+
+    &.active {
+      color: $ca-primary;
+      font-weight: 700;
+    }
+  }
+
+  @include respond-to("sm") {
+    .navbar-brand {
+      font-size: 1.1rem;
+    }
+  }
+}

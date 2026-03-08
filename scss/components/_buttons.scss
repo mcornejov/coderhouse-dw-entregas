@@ -1,0 +1,45 @@
+// ==========================================
+@use 'sass:map';
+//   Botones propios
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Placeholder base para todos los botones
+%btn-base {
+  padding: 0.6rem 1.5rem;
+  @include uppercase-label(map.get($font-sizes, "sm"), 1.5px);
+  border-radius: $border-radius-sm;
+  transition: background-color $transition-base, transform $transition-fast;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:focus-visible {
+    outline: 3px solid $ca-primary;
+    outline-offset: 2px;
+  }
+}
+
+// Boton primario
+.btn-aurora {
+  @extend %btn-base;
+  @include button-variant($ca-primary, $ca-primary-dark);
+
+  // Variante outline
+  &--outline {
+    @extend %btn-base;
+    @include button-variant(transparent, $ca-primary);
+  }
+
+  // Variante secundaria
+  &--secondary {
+    @extend %btn-base;
+    @include button-variant($ca-secondary, $ca-secondary-dark);
+  }
+}

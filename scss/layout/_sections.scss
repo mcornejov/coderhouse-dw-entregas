@@ -1,0 +1,26 @@
+// ==========================================
+//   Secciones generales
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.section-aurora {
+  padding: $section-padding 0;
+
+  &--alt {
+    background-color: $ca-surface;
+  }
+
+  @include respond-to("md") {
+    padding: $section-padding-md 0;
+  }
+
+  @include respond-to("sm") {
+    padding: $section-padding-sm 0;
+  }
+}
+
+.section-title {
+  @include section-heading;
+}

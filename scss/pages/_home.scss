@@ -1,0 +1,23 @@
+// ==========================================
+@use 'sass:map';
+//   Estilos especificos — Pagina de inicio
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Seccion de musica
+.music-section {
+  audio {
+    width: 100%;
+    max-width: 500px;
+    margin: $spacing-base auto;
+    display: block;
+  }
+}
+
+.music-credit {
+  color: $ca-muted;
+  font-style: italic;
+  font-size: map.get($font-sizes, "sm");
+}

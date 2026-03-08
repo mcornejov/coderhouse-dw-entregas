@@ -1,0 +1,34 @@
+// ==========================================
+@use 'sass:map';
+//   Estilos especificos — Pagina de contacto
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Horarios (reemplaza list-group de Bootstrap)
+.horarios-list {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $ca-border;
+    font-size: map.get($font-sizes, "base");
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__dia {
+    font-weight: 600;
+    color: $ca-ink;
+  }
+
+  &__hora {
+    color: $ca-muted;
+  }
+}

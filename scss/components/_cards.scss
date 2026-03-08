@@ -1,0 +1,63 @@
+// ==========================================
+@use 'sass:map';
+//   Cards (componente propio, sin Bootstrap card)
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.card-aurora {
+  border: 1px solid $ca-border;
+  border-radius: $border-radius;
+  overflow: hidden;
+  background-color: $ca-white;
+  height: 100%;
+  @include card-hover;
+
+  &__img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__body {
+    padding: 1.5rem;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    color: $ca-primary;
+    font-size: map.get($font-sizes, "lg");
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    color: $ca-muted;
+    font-size: map.get($font-sizes, "base");
+    margin-bottom: 0.75rem;
+  }
+
+  // Soporte para clases Bootstrap existentes (carousel cards, etc.)
+  .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-family: $font-heading;
+    color: $ca-primary;
+    font-size: map.get($font-sizes, "lg");
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    color: $ca-muted;
+    font-size: map.get($font-sizes, "base");
+  }
+}

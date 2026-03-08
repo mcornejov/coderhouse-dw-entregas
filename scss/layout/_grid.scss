@@ -1,0 +1,68 @@
+// ==========================================
+//   Grid custom (complementa Bootstrap grid)
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Grid propio con CSS Grid para secciones que no necesitan Bootstrap
+.grid-aurora {
+  display: grid;
+  gap: 1.5rem;
+
+  &--2cols {
+    grid-template-columns: 1fr 1fr;
+
+    @include respond-to("md") {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &--3cols {
+    grid-template-columns: repeat(3, 1fr);
+
+    @include respond-to("md") {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond-to("sm") {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &--sidebar {
+    grid-template-columns: 2fr 1fr;
+
+    @include respond-to("md") {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// Container propio
+.container-aurora {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+// Flex layout auxiliar
+.flex-aurora {
+  display: flex;
+  gap: 1.5rem;
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &--center {
+    @include flex-center;
+  }
+
+  &--between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
