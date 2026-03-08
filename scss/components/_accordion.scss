@@ -1,0 +1,98 @@
+// ==========================================
+@use 'sass:map';
+//   Accordion / FAQ (componente propio con details/summary)
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.faq-aurora {
+  &__item {
+    border: 1px solid $ca-border;
+    border-radius: $border-radius;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__question {
+    font-family: $font-heading;
+    font-weight: 600;
+    color: $ca-ink;
+    background-color: $ca-surface;
+    font-size: map.get($font-sizes, "md");
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    transition: background-color $transition-base, color $transition-base;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::after {
+      content: '+';
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: $ca-primary;
+      transition: transform $transition-base;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $ca-bg;
+      color: $ca-primary;
+    }
+  }
+
+  // Cuando esta abierto
+  &__item[open] {
+    .faq-aurora__question {
+      background-color: $ca-bg;
+      color: $ca-primary;
+
+      &::after {
+        content: '−';
+      }
+    }
+  }
+
+  &__answer {
+    color: $ca-muted;
+    line-height: 1.8;
+    padding: 1rem 1.25rem;
+  }
+}
+
+// Soporte para accordion Bootstrap existente (transicion gradual)
+.accordion-aurora {
+  .accordion-button {
+    font-family: $font-heading;
+    font-weight: 600;
+    color: $ca-ink;
+    background-color: $ca-surface;
+    font-size: map.get($font-sizes, "md");
+
+    &:not(.collapsed) {
+      background-color: $ca-bg;
+      color: $ca-primary;
+      box-shadow: none;
+    }
+
+    &:focus {
+      border-color: $ca-primary;
+      box-shadow: $focus-shadow;
+    }
+  }
+
+  .accordion-body {
+    color: $ca-muted;
+    line-height: 1.8;
+  }
+}

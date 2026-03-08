@@ -9,6 +9,13 @@ Thumbs.db
 *.swp
 *~
 
+# Dependencias
+node_modules/
+
+# SASS cache
+.sass-cache/
+*.css.map
+
 # Archivos temporales
 *.tmp
 *.bak

@@ -1,0 +1,60 @@
+// ==========================================
+@use 'sass:map';
+//   Estilos especificos — Pagina de menu
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Lista de items del menu (reemplaza Bootstrap list-group)
+.menu-list {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid $ca-border;
+    color: $ca-ink;
+    font-size: map.get($font-sizes, "base");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__price {
+    color: $ca-primary;
+    font-weight: 700;
+  }
+
+  // Variante numerada
+  &--numbered {
+    counter-reset: menu-counter;
+
+    .menu-list__item {
+      counter-increment: menu-counter;
+
+      &::before {
+        content: counter(menu-counter) ".";
+        color: $ca-primary;
+        font-weight: 700;
+        margin-right: 0.75rem;
+        font-family: $font-heading;
+      }
+    }
+  }
+}
+
+// Soporte para list-group Bootstrap existente
+.list-group-item {
+  border-color: $ca-border;
+  color: $ca-ink;
+  font-size: map.get($font-sizes, "base");
+}
+
+.list-group-flush .list-group-item:last-child {
+  border-bottom: none;
+}

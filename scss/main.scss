@@ -1,0 +1,36 @@
+// ==========================================
+//   Cafe Aurora — Archivo principal SCSS
+//   Compila a css/styles.css
+// ==========================================
+
+// 1. Abstracts (variables y mixins — no generan CSS por si solos)
+// Se importan via @use dentro de cada partial
+
+// 2. Vendors (sobreescrituras de frameworks)
+@use 'vendors/bootstrap-overrides';
+
+// 3. Base (reset, tipografia, utilidades)
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/utilities';
+
+// 4. Layout (estructura general)
+@use 'layout/grid';
+@use 'layout/sections';
+@use 'layout/footer';
+@use 'layout/aside';
+
+// 5. Componentes (elementos reutilizables)
+@use 'components/navbar';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/carousel';
+@use 'components/forms';
+@use 'components/accordion';
+@use 'components/blockquote';
+@use 'components/tables';
+
+// 6. Paginas (estilos especificos por pagina)
+@use 'pages/home';
+@use 'pages/menu';
+@use 'pages/contacto';

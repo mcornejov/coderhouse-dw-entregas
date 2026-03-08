@@ -1,0 +1,87 @@
+// ==========================================
+@use 'sass:map';
+//   Formulario (componente propio)
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.form-aurora {
+  &__group {
+    margin-bottom: 1rem;
+  }
+
+  &__label {
+    @include uppercase-label;
+    display: block;
+    color: $ca-ink;
+    margin-bottom: 0.25rem;
+  }
+
+  &__input,
+  &__select,
+  &__textarea {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid $ca-border;
+    border-radius: $border-radius-sm;
+    font-family: $font-body;
+    font-size: map.get($font-sizes, "base");
+    color: $ca-ink;
+    background-color: $ca-white;
+    transition: border-color $transition-base, box-shadow $transition-base;
+
+    &:focus {
+      border-color: $ca-primary;
+      box-shadow: $focus-shadow;
+      outline: none;
+    }
+
+    // Pseudoclase :required — indicador visual en campos obligatorios
+    &:required {
+      border-left: 3px solid $ca-primary;
+    }
+  }
+
+  &__textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  &__select {
+    appearance: auto;
+  }
+
+  &__check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  // Soporte para clases Bootstrap existentes (transicion gradual)
+  .form-control,
+  .form-select {
+    border: 1px solid $ca-border;
+    border-radius: $border-radius-sm;
+    font-family: $font-body;
+    color: $ca-ink;
+    transition: border-color $transition-base, box-shadow $transition-base;
+
+    &:focus {
+      border-color: $ca-primary;
+      box-shadow: $focus-shadow;
+    }
+
+    &:required {
+      border-left: 3px solid $ca-primary;
+    }
+  }
+
+  label,
+  .form-label {
+    @include uppercase-label;
+    color: $ca-ink;
+    margin-bottom: 0.25rem;
+  }
+}

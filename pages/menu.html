@@ -57,13 +57,11 @@
   <main>
 
     <!-- Introduccion -->
-    <section class="section-aurora text-center">
+    <section class="section-aurora" style="text-align: center;">
       <div class="container">
         <h1 class="section-title">Menu de temporada</h1>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8">
-            <p class="lead text-muted-aurora">Sabores equilibrados y opciones para cada momento del dia. Trabajamos con granos de origen y productos frescos de estacion.</p>
-          </div>
+        <div class="flex-aurora flex-aurora--center">
+          <p class="text-muted-aurora" style="max-width: 720px;">Sabores equilibrados y opciones para cada momento del dia. Trabajamos con granos de origen y productos frescos de estacion.</p>
         </div>
       </div>
     </section>
@@ -72,24 +70,22 @@
     <section id="cafes" class="section-aurora section-aurora--alt">
       <div class="container">
         <h2 class="section-title">Cafes</h2>
-        <div class="row g-4 align-items-center">
-          <div class="col-12 col-md-6">
-            <figure class="mb-0">
-              <img src="../img/producto-1.jpg" class="img-fluid rounded" alt="Capuccino con pastel de chocolate">
-              <figcaption class="text-center mt-2">
-                Cafe y pasteleria. Foto: <a href="https://www.freepik.es/foto-gratis/primer-plano-taza-cafe-capuchino-pastel-chocolate_6117711.htm">Freepik</a>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-12 col-md-6">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item bg-transparent">Espresso simple</li>
-              <li class="list-group-item bg-transparent">Latte vainilla</li>
-              <li class="list-group-item bg-transparent">Flat white</li>
-              <li class="list-group-item bg-transparent">Cold brew</li>
-              <li class="list-group-item bg-transparent">Capuccino clasico</li>
+        <div class="grid-aurora grid-aurora--2cols">
+          <figure>
+            <img src="../img/producto-1.jpg" class="img-responsive" alt="Capuccino con pastel de chocolate">
+            <figcaption style="text-align: center;">
+              Cafe y pasteleria. Foto: <a href="https://www.freepik.es/foto-gratis/primer-plano-taza-cafe-capuchino-pastel-chocolate_6117711.htm">Freepik</a>
+            </figcaption>
+          </figure>
+          <div>
+            <ul class="menu-list">
+              <li class="menu-list__item">Espresso simple</li>
+              <li class="menu-list__item">Latte vainilla</li>
+              <li class="menu-list__item">Flat white</li>
+              <li class="menu-list__item">Cold brew</li>
+              <li class="menu-list__item">Capuccino clasico</li>
             </ul>
-            <p class="mt-3 text-muted-aurora">Metodos disponibles: prensa francesa, aeropress y V60.</p>
+            <p class="text-muted-aurora">Metodos disponibles: prensa francesa, aeropress y V60.</p>
           </div>
         </div>
       </div>
@@ -99,26 +95,23 @@
     <section id="pasteleria" class="section-aurora">
       <div class="container">
         <h2 class="section-title">Pasteleria artesanal</h2>
-        <div class="row g-4 align-items-center">
-          <!-- Imagen a la derecha en desktop -->
-          <div class="col-12 col-md-6 order-md-2">
-            <figure class="mb-0">
-              <img src="../img/producto-2.jpg" class="img-fluid rounded" alt="Pasteleria con cafe sobre mesa de madera">
-              <figcaption class="text-center mt-2">
-                Seleccion del dia. Foto: <a href="https://www.freepik.es/foto-gratis/freshly-baked-pastry-with-cup-of-coffee-on-wooden-table_3039265.htm">Freepik</a>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-12 col-md-6 order-md-1">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item bg-transparent">Brownie de cacao</li>
-              <li class="list-group-item bg-transparent">Cookie de avena</li>
-              <li class="list-group-item bg-transparent">Tarta de limon</li>
-              <li class="list-group-item bg-transparent">Budin de naranja</li>
-              <li class="list-group-item bg-transparent">Croissant de manteca</li>
+        <div class="grid-aurora grid-aurora--2cols">
+          <div>
+            <ul class="menu-list">
+              <li class="menu-list__item">Brownie de cacao</li>
+              <li class="menu-list__item">Cookie de avena</li>
+              <li class="menu-list__item">Tarta de limon</li>
+              <li class="menu-list__item">Budin de naranja</li>
+              <li class="menu-list__item">Croissant de manteca</li>
             </ul>
-            <p class="mt-3 text-muted-aurora">Elaboracion diaria con ingredientes de estacion.</p>
+            <p class="text-muted-aurora">Elaboracion diaria con ingredientes de estacion.</p>
           </div>
+          <figure>
+            <img src="../img/producto-2.jpg" class="img-responsive" alt="Pasteleria con cafe sobre mesa de madera">
+            <figcaption style="text-align: center;">
+              Seleccion del dia. Foto: <a href="https://www.freepik.es/foto-gratis/freshly-baked-pastry-with-cup-of-coffee-on-wooden-table_3039265.htm">Freepik</a>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -127,31 +120,25 @@
     <section id="origenes" class="section-aurora section-aurora--alt">
       <div class="container">
         <h2 class="section-title">Origenes y notas</h2>
-        <div class="row g-4">
-          <div class="col-12 col-md-4">
-            <div class="card card-aurora text-center p-3">
-              <div class="card-body">
-                <h3 class="card-title">Colombia</h3>
-                <p class="card-text">Chocolate, caramelo y final dulce. Nuestro origen principal y el mas pedido en barra.</p>
-              </div>
+        <div class="grid-aurora grid-aurora--3cols">
+          <article class="card-aurora" style="text-align: center;">
+            <div class="card-aurora__body">
+              <h3 class="card-aurora__title">Colombia</h3>
+              <p class="card-aurora__text">Chocolate, caramelo y final dulce. Nuestro origen principal y el mas pedido en barra.</p>
             </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="card card-aurora text-center p-3">
-              <div class="card-body">
-                <h3 class="card-title">Brasil</h3>
-                <p class="card-text">Nueces tostadas y cuerpo redondo. Ideal para quienes prefieren sabores intensos.</p>
-              </div>
+          </article>
+          <article class="card-aurora" style="text-align: center;">
+            <div class="card-aurora__body">
+              <h3 class="card-aurora__title">Brasil</h3>
+              <p class="card-aurora__text">Nueces tostadas y cuerpo redondo. Ideal para quienes prefieren sabores intensos.</p>
             </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="card card-aurora text-center p-3">
-              <div class="card-body">
-                <h3 class="card-title">Etiopia</h3>
-                <p class="card-text">Frutas rojas y perfume floral. Un cafe con caracter y personalidad unica.</p>
-              </div>
+          </article>
+          <article class="card-aurora" style="text-align: center;">
+            <div class="card-aurora__body">
+              <h3 class="card-aurora__title">Etiopia</h3>
+              <p class="card-aurora__text">Frutas rojas y perfume floral. Un cafe con caracter y personalidad unica.</p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -160,36 +147,34 @@
     <section id="maridajes" class="section-aurora">
       <div class="container">
         <h2 class="section-title">Maridajes sugeridos</h2>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8">
-            <div class="table-responsive">
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">Cafe</th>
-                    <th scope="col">Acompanamiento</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Capuccino</td>
-                    <td>Brownie de cacao</td>
-                  </tr>
-                  <tr>
-                    <td>Flat white</td>
-                    <td>Cookie de avena</td>
-                  </tr>
-                  <tr>
-                    <td>Cold brew</td>
-                    <td>Tarta de limon</td>
-                  </tr>
-                  <tr>
-                    <td>Espresso</td>
-                    <td>Croissant de manteca</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+        <div class="flex-aurora flex-aurora--center">
+          <div class="table-responsive-aurora" style="max-width: 720px; width: 100%;">
+            <table class="table-aurora">
+              <thead>
+                <tr>
+                  <th scope="col">Cafe</th>
+                  <th scope="col">Acompanamiento</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Capuccino</td>
+                  <td>Brownie de cacao</td>
+                </tr>
+                <tr>
+                  <td>Flat white</td>
+                  <td>Cookie de avena</td>
+                </tr>
+                <tr>
+                  <td>Cold brew</td>
+                  <td>Tarta de limon</td>
+                </tr>
+                <tr>
+                  <td>Espresso</td>
+                  <td>Croissant de manteca</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -199,15 +184,15 @@
     <section id="recomendados" class="section-aurora section-aurora--alt">
       <div class="container">
         <h2 class="section-title">Recomendados del barista</h2>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8">
+        <div class="flex-aurora flex-aurora--center">
+          <div style="max-width: 720px; width: 100%;">
             <article>
               <h3>Como preparamos nuestro cafe filtrado</h3>
-              <ol class="list-group list-group-numbered mt-3">
-                <li class="list-group-item bg-transparent">Seleccion del grano y molienda fresca al momento.</li>
-                <li class="list-group-item bg-transparent">Pre-infusion de 30 segundos para liberar aromas.</li>
-                <li class="list-group-item bg-transparent">Vertido lento y constante en circulos concentricos.</li>
-                <li class="list-group-item bg-transparent">Reposo breve y servicio inmediato en taza precalentada.</li>
+              <ol class="menu-list menu-list--numbered">
+                <li class="menu-list__item">Seleccion del grano y molienda fresca al momento.</li>
+                <li class="menu-list__item">Pre-infusion de 30 segundos para liberar aromas.</li>
+                <li class="menu-list__item">Vertido lento y constante en circulos concentricos.</li>
+                <li class="menu-list__item">Reposo breve y servicio inmediato en taza precalentada.</li>
               </ol>
             </article>
           </div>
@@ -220,12 +205,12 @@
   <!-- Footer -->
   <footer class="footer-aurora">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-12 col-md-4">
+      <div class="grid-aurora grid-aurora--3cols">
+        <div>
           <h5>Cafe Aurora</h5>
           <p>Un espacio calido para compartir cafe de especialidad, pasteleria artesanal y buena musica.</p>
         </div>
-        <div class="col-12 col-md-4">
+        <div>
           <h5>Navegacion</h5>
           <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -233,7 +218,7 @@
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
-        <div class="col-12 col-md-4">
+        <div>
           <h5>Contacto</h5>
           <address>
             <p>Av. Principal 123, Ciudad</p>

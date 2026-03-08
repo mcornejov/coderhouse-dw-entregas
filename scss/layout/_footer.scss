@@ -1,0 +1,60 @@
+// ==========================================
+@use 'sass:map';
+//   Footer
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.footer-aurora {
+  background-color: $ca-ink;
+  color: $ca-bg;
+  padding: 3rem 0 1.5rem;
+
+  h5 {
+    color: $ca-primary;
+    font-family: $font-heading;
+    @include uppercase-label(map.get($font-sizes, "md"), 1px);
+    margin-bottom: $spacing-base;
+  }
+
+  p,
+  li {
+    color: rgba($ca-bg, 0.75);
+    font-size: map.get($font-sizes, "sm");
+  }
+
+  a {
+    color: $ca-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: $ca-white;
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  hr {
+    border-color: rgba($ca-bg, 0.15);
+  }
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: map.get($font-sizes, "xs");
+  color: rgba($ca-bg, 0.5);
+  margin-top: $spacing-base;
+}

@@ -1,0 +1,65 @@
+// ==========================================
+//   Variables del proyecto Cafe Aurora
+// ==========================================
+
+// --- Colores ---
+$ca-primary:        #c75a2a;
+$ca-primary-dark:   #a34820;
+$ca-secondary:      #2b6f68;
+$ca-secondary-dark: #1e524d;
+$ca-bg:             #f7f0e6;
+$ca-surface:        #fff6ea;
+$ca-ink:            #3a2a1f;
+$ca-muted:          #6e5a4f;
+$ca-border:         #e0d5c8;
+$ca-white:          #ffffff;
+
+// Mapa de colores (para @each)
+$colors: (
+  "primary":   $ca-primary,
+  "secondary": $ca-secondary,
+  "ink":       $ca-ink,
+  "muted":     $ca-muted,
+  "white":     $ca-white,
+);
+
+// --- Tipografia ---
+$font-heading: 'Playfair Display', Georgia, serif;
+$font-body:    'Lato', 'Helvetica Neue', sans-serif;
+
+$font-sizes: (
+  "xs":  0.8rem,
+  "sm":  0.85rem,
+  "base": 0.95rem,
+  "md":  1rem,
+  "lg":  1.15rem,
+  "xl":  1.25rem,
+  "2xl": 1.75rem,
+  "3xl": 2.5rem,
+  "4xl": 3rem,
+);
+
+// --- Breakpoints ---
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+// --- Espaciado ---
+$spacing-base: 1rem;
+$section-padding: 4rem;
+$section-padding-md: 2.5rem;
+$section-padding-sm: 2rem;
+
+// --- Bordes y sombras ---
+$border-radius:    8px;
+$border-radius-sm: 4px;
+$shadow-light: 0 2px 8px rgba($ca-ink, 0.08);
+$shadow-hover: 0 8px 24px rgba($ca-ink, 0.12);
+$focus-shadow: 0 0 0 0.2rem rgba($ca-primary, 0.15);
+
+// --- Transiciones ---
+$transition-base: 0.3s ease;
+$transition-fast: 0.2s ease;

@@ -1,0 +1,31 @@
+// ==========================================
+@use 'sass:map';
+//   Aside lateral (datos rapidos)
+// ==========================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.aside-aurora {
+  background-color: $ca-surface;
+  border: 1px solid $ca-border;
+  border-radius: $border-radius;
+  padding: 1.5rem;
+
+  h3 {
+    font-size: map.get($font-sizes, "md");
+    @include uppercase-label(map.get($font-sizes, "md"), 1px);
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    list-style-type: circle;
+    padding-left: 1.25rem;
+  }
+
+  li {
+    color: $ca-muted;
+    margin-bottom: 0.35rem;
+    font-size: map.get($font-sizes, "base");
+  }
+}

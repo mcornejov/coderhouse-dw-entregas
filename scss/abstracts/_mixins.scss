@@ -1,0 +1,95 @@
+// ==========================================
+//   Mixins reutilizables
+// ==========================================
+
+@use 'sass:map';
+@use 'variables' as *;
+
+// --- Responsive: media query por breakpoint ---
+// Uso: @include respond-to("md") { ... }
+@mixin respond-to($bp) {
+  $value: map.get($breakpoints, $bp);
+  @if $value {
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$bp}` no encontrado en $breakpoints.";
+  }
+}
+
+// --- Flexbox center ---
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// --- Efecto hover de card ---
+@mixin card-hover($y: -4px) {
+  transition: transform $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    transform: translateY($y);
+    box-shadow: $shadow-hover;
+  }
+}
+
+// --- Generador de variantes de boton ---
+// Uso: @include button-variant($ca-primary, $ca-primary-dark)
+@mixin button-variant($bg, $hover-bg) {
+  @if $bg == transparent {
+    background-color: transparent;
+    color: $ca-primary;
+    border: 2px solid $ca-primary;
+
+    &:hover {
+      background-color: $ca-primary;
+      color: $ca-white;
+    }
+  } @else {
+    background-color: $bg;
+    color: $ca-white;
+    border: 2px solid $bg;
+
+    &:hover {
+      background-color: $hover-bg;
+      border-color: $hover-bg;
+      color: $ca-white;
+      text-decoration: none;
+    }
+  }
+}
+
+// --- Estilos de titulo de seccion ---
+@mixin section-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $ca-primary;
+    margin: 0.75rem auto 0;
+  }
+}
+
+// --- Texto uppercase con tracking ---
+@mixin uppercase-label($size: map.get($font-sizes, "sm"), $spacing: 1px) {
+  text-transform: uppercase;
+  letter-spacing: $spacing;
+  font-size: $size;
+  font-weight: 600;
+}
+
+// --- Reducir movimiento ---
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
