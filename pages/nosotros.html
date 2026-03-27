@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Aurora — Nuestra historia, equipo y filosofia</title>
+  <meta name="description" content="Conoce la historia de Cafe Aurora: como empezamos, nuestro equipo de baristas y pasteleros, y la filosofia de cafe de origen que nos mueve.">
+  <meta name="keywords" content="historia cafeteria, equipo baristas, cafe de origen, filosofia cafe, cafeteria barrio">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cafe Aurora — Nuestra historia y equipo">
+  <meta property="og:description" content="Nacimos en 2023 con la idea de crear un punto de encuentro para los amantes del cafe. Conoce al equipo detras de cada taza.">
+  <meta property="og:image" content="../img/local.jpg">
+  <meta property="og:type" content="website">
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Navegacion -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-aurora sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo.svg" alt="Logo Cafe Aurora" height="36">
+        Cafe Aurora
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+              aria-controls="navPrincipal" aria-expanded="false"
+              aria-label="Abrir menu de navegacion">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navPrincipal" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero de pagina -->
+    <section class="page-hero">
+      <img src="../img/local.jpg" class="page-hero__img" alt="Interior de Cafe Aurora con personas disfrutando">
+      <div class="page-hero__overlay">
+        <h1>Nuestra historia</h1>
+        <p>Conoce como nacio Cafe Aurora y lo que nos mueve cada dia.</p>
+      </div>
+    </section>
+
+    <!-- Historia -->
+    <section id="historia" class="section-aurora">
+      <div class="container">
+        <h2 class="section-title">Como empezo todo</h2>
+        <div class="grid-aurora grid-aurora--sidebar">
+          <article class="fade-in-up">
+            <p>Cafe Aurora nacio en 2023 como un proyecto familiar en el corazon del barrio. La idea era simple: crear un espacio donde el cafe fuera mas que una bebida, un motivo para encontrarse, conversar y hacer una pausa en la rutina.</p>
+            <p>Empezamos con una maquina, un punadoo de recetas y muchas ganas. Hoy, tres anos despues, seguimos con la misma filosofia: ingredientes honestos, procesos cuidados y un trato cercano con cada persona que cruza la puerta.</p>
+            <p>Nuestro nombre viene de esas primeras mananas de prueba, cuando tostavamos granos antes del amanecer. Aurora era el momento en que todo comenzaba a tener sentido.</p>
+          </article>
+          <aside class="aside-aurora">
+            <h3>Hitos</h3>
+            <ul>
+              <li>2023 — Apertura del local</li>
+              <li>2023 — Primer tueste propio</li>
+              <li>2024 — Incorporamos pasteleria</li>
+              <li>2025 — Espacio para eventos</li>
+              <li>2026 — Lanzamiento web</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filosofia -->
+    <section id="filosofia" class="section-aurora section-aurora--alt">
+      <div class="container">
+        <h2 class="section-title">Nuestra filosofia</h2>
+        <div class="grid-aurora grid-aurora--3cols">
+          <article class="card-aurora card-aurora--icon fade-in-up">
+            <div class="card-aurora__body">
+              <h3 class="card-aurora__title">Origen directo</h3>
+              <p class="card-aurora__text">Trabajamos con productores de Colombia, Brasil y Etiopia. Compramos cafe verde de cosechas recientes y tostamos en lotes pequenos para garantizar frescura.</p>
+            </div>
+          </article>
+          <article class="card-aurora card-aurora--icon fade-in-up">
+            <div class="card-aurora__body">
+              <h3 class="card-aurora__title">Proceso artesanal</h3>
+              <p class="card-aurora__text">Cada taza se prepara al momento. Usamos metodos manuales como V60, aeropress y prensa francesa porque creemos que la paciencia se nota en el sabor.</p>
+            </div>
+          </article>
+          <article class="card-aurora card-aurora--icon fade-in-up">
+            <div class="card-aurora__body">
+              <h3 class="card-aurora__title">Comunidad</h3>
+              <p class="card-aurora__text">Mas que una cafeteria, somos un punto de encuentro. Organizamos catas, talleres de latte art y eventos culturales para el barrio.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo -->
+    <section id="equipo" class="section-aurora">
+      <div class="container">
+        <h2 class="section-title">El equipo</h2>
+        <div class="grid-aurora grid-aurora--3cols">
+          <article class="team-card fade-in-up">
+            <div class="team-card__avatar" aria-hidden="true">MC</div>
+            <h3 class="team-card__name">Martin Cornejo</h3>
+            <p class="team-card__role">Fundador y tostador</p>
+            <p class="team-card__bio">Apasionado por los granos de origen unico y la extraccion manual. Formo el concepto de Aurora desde el primer tueste.</p>
+          </article>
+          <article class="team-card fade-in-up">
+            <div class="team-card__avatar" aria-hidden="true">LR</div>
+            <h3 class="team-card__name">Lucia Ramirez</h3>
+            <p class="team-card__role">Barista principal</p>
+            <p class="team-card__bio">Especialista en latte art y metodos de filtrado. Siempre buscando el equilibrio perfecto entre acidez y dulzura.</p>
+          </article>
+          <article class="team-card fade-in-up">
+            <div class="team-card__avatar" aria-hidden="true">SP</div>
+            <h3 class="team-card__name">Sofia Perez</h3>
+            <p class="team-card__role">Pastelera</p>
+            <p class="team-card__bio">Responsable de la pasteleria artesanal. Trabaja con masa madre, frutas de estacion y recetas propias.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valores -->
+    <section id="valores" class="section-aurora section-aurora--alt">
+      <div class="container">
+        <h2 class="section-title">Lo que nos define</h2>
+        <div class="flex-aurora flex-aurora--center">
+          <div style="max-width: 720px; text-align: center;">
+            <blockquote class="blockquote-aurora">
+              <p>"El cafe bueno no necesita adornos. Solo necesita tiempo, atencion y buena compania."</p>
+              <footer>— Equipo Aurora</footer>
+            </blockquote>
+            <div class="valores-grid">
+              <div class="valor-item">
+                <span class="valor-item__numero">01</span>
+                <h4 class="valor-item__titulo">Transparencia</h4>
+                <p class="valor-item__texto">Sabemos de donde viene cada grano y lo compartimos con vos.</p>
+              </div>
+              <div class="valor-item">
+                <span class="valor-item__numero">02</span>
+                <h4 class="valor-item__titulo">Calidad</h4>
+                <p class="valor-item__texto">Elegimos menos opciones pero mejor ejecutadas.</p>
+              </div>
+              <div class="valor-item">
+                <span class="valor-item__numero">03</span>
+                <h4 class="valor-item__titulo">Cercania</h4>
+                <p class="valor-item__texto">Conocemos a nuestros clientes por nombre. Eso no cambia.</p>
+              </div>
+              <div class="valor-item">
+                <span class="valor-item__numero">04</span>
+                <h4 class="valor-item__titulo">Sustentabilidad</h4>
+                <p class="valor-item__texto">Packaging reciclable, proveedores locales y cero desperdicio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-aurora">
+      <div class="container text-center">
+        <h2 class="section-title">Veni a conocernos</h2>
+        <p class="text-muted-aurora">Estamos en Av. Principal 123. Pasa cuando quieras, la puerta siempre esta abierta.</p>
+        <a href="contacto.html" class="btn-aurora">Contactanos</a>
+        <a href="menu.html" class="btn-aurora btn-aurora--outline" style="margin-left: 0.5rem;">Ver menu</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-aurora">
+    <div class="container">
+      <div class="grid-aurora grid-aurora--3cols">
+        <div>
+          <h5>Cafe Aurora</h5>
+          <p>Un espacio calido para compartir cafe de especialidad, pasteleria artesanal y buena musica.</p>
+        </div>
+        <div>
+          <h5>Navegacion</h5>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contacto</h5>
+          <address>
+            <p>Av. Principal 123, Ciudad</p>
+            <p>Tel: (011) 555-1234</p>
+            <p><a href="mailto:hola@cafeaurora.com">hola@cafeaurora.com</a></p>
+          </address>
+        </div>
+      </div>
+      <hr>
+      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik. Musica: Pixabay.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

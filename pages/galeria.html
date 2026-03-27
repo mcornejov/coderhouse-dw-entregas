@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Aurora — Galeria de fotos, eventos y actividades</title>
+  <meta name="description" content="Galeria de Cafe Aurora: fotos del espacio, eventos, catas de cafe, talleres de pasteleria y numeros que cuentan nuestra historia.">
+  <meta name="keywords" content="galeria cafeteria, fotos cafe, eventos cafe, catas cafe, talleres pasteleria">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cafe Aurora — Galeria y eventos">
+  <meta property="og:description" content="Momentos, espacios y detalles que hacen a Cafe Aurora. Catas, talleres y eventos privados.">
+  <meta property="og:image" content="../img/hero.jpg">
+  <meta property="og:type" content="website">
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Navegacion -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-aurora sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo.svg" alt="Logo Cafe Aurora" height="36">
+        Cafe Aurora
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+              aria-controls="navPrincipal" aria-expanded="false"
+              aria-label="Abrir menu de navegacion">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navPrincipal" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero de pagina -->
+    <section class="page-hero">
+      <img src="../img/hero.jpg" class="page-hero__img" alt="Interior de cafeteria con mesas de madera">
+      <div class="page-hero__overlay">
+        <h1>Galeria</h1>
+        <p>Momentos, espacios y detalles que hacen a Cafe Aurora.</p>
+      </div>
+    </section>
+
+    <!-- Galeria principal -->
+    <section id="fotos" class="section-aurora">
+      <div class="container">
+        <h2 class="section-title">Nuestro espacio</h2>
+        <div class="galeria-grid">
+          <figure class="galeria-item galeria-item--wide">
+            <img src="../img/hero.jpg" loading="lazy" alt="Vista panoramica del interior de Cafe Aurora con mesas de madera y decoracion calida">
+            <figcaption>El salon principal — mesas amplias y luz natural</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="../img/local.jpg" loading="lazy" alt="Personas conversando y disfrutando cafe en el local">
+            <figcaption>Momentos compartidos en la barra</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="../img/producto-1.jpg" loading="lazy" alt="Capuccino con arte latte junto a pastel de chocolate">
+            <figcaption>Capuccino con latte art y brownie de cacao</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="../img/producto-2.jpg" loading="lazy" alt="Seleccion de pasteleria artesanal sobre mesa de madera">
+            <figcaption>Pasteleria fresca del dia</figcaption>
+          </figure>
+          <figure class="galeria-item galeria-item--wide">
+            <img src="../img/local.jpg" loading="lazy" alt="Ambiente del cafe durante la tarde con luz calida">
+            <figcaption>Tardes tranquilas con buena musica y cafe filtrado</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eventos -->
+    <section id="eventos" class="section-aurora section-aurora--alt">
+      <div class="container">
+        <h2 class="section-title">Eventos y actividades</h2>
+        <div class="grid-aurora grid-aurora--3cols">
+          <article class="card-aurora fade-in-up">
+            <img src="../img/producto-1.jpg" class="card-aurora__img" alt="Taza de cafe con espuma decorada durante una cata">
+            <div class="card-aurora__body">
+              <h3 class="card-aurora__title">Catas de cafe</h3>
+              <p class="card-aurora__text">Una vez al mes organizamos degustaciones guiadas de origenes y metodos de extraccion. Cupos limitados.</p>
+              <a href="contacto.html" class="btn-aurora btn-aurora--outline">Reservar lugar</a>
+            </div>
+          </article>
+          <article class="card-aurora fade-in-up">
+            <img src="../img/producto-2.jpg" class="card-aurora__img" alt="Mesa preparada con ingredientes para taller de pasteleria">
+            <div class="card-aurora__body">
+              <h3 class="card-aurora__title">Talleres de pasteleria</h3>
+              <p class="card-aurora__text">Aprende a hacer nuestros clasicos: brownies, cookies y budines con ingredientes de estacion.</p>
+              <a href="contacto.html" class="btn-aurora btn-aurora--outline">Consultar fechas</a>
+            </div>
+          </article>
+          <article class="card-aurora fade-in-up">
+            <img src="../img/local.jpg" class="card-aurora__img" alt="Espacio privado del cafe preparado para un evento">
+            <div class="card-aurora__body">
+              <h3 class="card-aurora__title">Eventos privados</h3>
+              <p class="card-aurora__text">Disponemos de un espacio para hasta 25 personas. Cumpleanos, reuniones y presentaciones con servicio de cafe.</p>
+              <a href="contacto.html" class="btn-aurora btn-aurora--outline">Pedir presupuesto</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cifras -->
+    <section id="cifras" class="section-aurora">
+      <div class="container">
+        <h2 class="section-title">Aurora en numeros</h2>
+        <div class="grid-aurora grid-aurora--3cols stats-grid">
+          <div class="stat-card fade-in-up">
+            <span class="stat-card__number">3</span>
+            <p class="stat-card__label">Anos sirviendo cafe</p>
+          </div>
+          <div class="stat-card fade-in-up">
+            <span class="stat-card__number">5</span>
+            <p class="stat-card__label">Origenes de cafe en carta</p>
+          </div>
+          <div class="stat-card fade-in-up">
+            <span class="stat-card__number">12</span>
+            <p class="stat-card__label">Eventos realizados</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-aurora section-aurora--alt">
+      <div class="container text-center">
+        <h2 class="section-title">Queres ser parte?</h2>
+        <p class="text-muted-aurora">Si te interesa participar de nuestros talleres o reservar un espacio para tu evento, escribinos.</p>
+        <a href="contacto.html" class="btn-aurora">Contactanos</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-aurora">
+    <div class="container">
+      <div class="grid-aurora grid-aurora--3cols">
+        <div>
+          <h5>Cafe Aurora</h5>
+          <p>Un espacio calido para compartir cafe de especialidad, pasteleria artesanal y buena musica.</p>
+        </div>
+        <div>
+          <h5>Navegacion</h5>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contacto</h5>
+          <address>
+            <p>Av. Principal 123, Ciudad</p>
+            <p>Tel: (011) 555-1234</p>
+            <p><a href="mailto:hola@cafeaurora.com">hola@cafeaurora.com</a></p>
+          </address>
+        </div>
+      </div>
+      <hr>
+      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik. Musica: Pixabay.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
