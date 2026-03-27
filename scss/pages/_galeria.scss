@@ -1,0 +1,103 @@
+// ==========================================
+//   Estilos especificos — Galeria
+// ==========================================
+
+@use 'sass:map';
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// --- Grilla de galeria tipo masonry ---
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  @include respond-to("md") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to("sm") {
+    grid-template-columns: 1fr;
+  }
+}
+
+.galeria-item {
+  overflow: hidden;
+  border-radius: $border-radius;
+  position: relative;
+  margin: 0;
+
+  &--wide {
+    grid-column: span 2;
+
+    @include respond-to("sm") {
+      grid-column: span 1;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: transform $transition-base, filter $transition-base;
+  }
+
+  &--wide img {
+    height: 300px;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.85);
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+    color: $ca-white;
+    font-size: map.get($font-sizes, "sm");
+    font-style: normal;
+    transform: translateY(100%);
+    transition: transform $transition-base;
+  }
+
+  &:hover figcaption {
+    transform: translateY(0);
+  }
+}
+
+// --- Tarjetas de estadisticas ---
+.stat-card {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: $ca-white;
+  border: 1px solid $ca-border;
+  border-radius: $border-radius;
+  transition: transform $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-hover;
+  }
+
+  &__number {
+    display: block;
+    font-family: $font-heading;
+    font-size: map.get($font-sizes, "4xl");
+    font-weight: 700;
+    color: $ca-primary;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  &__label {
+    @include uppercase-label(map.get($font-sizes, "xs"), 1.5px);
+    color: $ca-muted;
+    margin-bottom: 0;
+  }
+}

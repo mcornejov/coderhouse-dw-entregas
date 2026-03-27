@@ -29,8 +29,11 @@
 @use 'components/accordion';
 @use 'components/blockquote';
 @use 'components/tables';
+@use 'components/page-hero';
 
 // 6. Paginas (estilos especificos por pagina)
 @use 'pages/home';
 @use 'pages/menu';
 @use 'pages/contacto';
+@use 'pages/nosotros';
+@use 'pages/galeria';

@@ -1,0 +1,100 @@
+// ==========================================
+//   Estilos especificos — Nosotros
+// ==========================================
+
+@use 'sass:map';
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// --- Tarjeta de equipo ---
+.team-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: $ca-white;
+  border: 1px solid $ca-border;
+  border-radius: $border-radius;
+  @include card-hover(-6px);
+
+  &__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $ca-primary;
+    color: $ca-white;
+    font-family: $font-heading;
+    font-size: map.get($font-sizes, "xl");
+    font-weight: 700;
+    @include flex-center;
+    margin: 0 auto 1rem;
+    transition: transform $transition-base;
+  }
+
+  &:hover &__avatar {
+    transform: scale(1.1);
+  }
+
+  &__name {
+    font-family: $font-heading;
+    font-size: map.get($font-sizes, "lg");
+    color: $ca-ink;
+    margin-bottom: 0.25rem;
+  }
+
+  &__role {
+    @include uppercase-label(map.get($font-sizes, "xs"), 1.5px);
+    color: $ca-primary;
+    margin-bottom: 0.75rem;
+  }
+
+  &__bio {
+    font-size: map.get($font-sizes, "sm");
+    color: $ca-muted;
+    line-height: 1.6;
+  }
+}
+
+// --- Grilla de valores ---
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+  text-align: left;
+
+  @include respond-to("sm") {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.valor-item {
+  padding: 1.25rem;
+  border-left: 3px solid $ca-primary;
+  transition: background-color $transition-base;
+
+  &:hover {
+    background-color: rgba($ca-primary, 0.04);
+  }
+
+  &__numero {
+    font-family: $font-heading;
+    font-size: map.get($font-sizes, "2xl");
+    color: rgba($ca-primary, 0.3);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  &__titulo {
+    font-family: $font-heading;
+    font-size: map.get($font-sizes, "md");
+    color: $ca-ink;
+    margin-bottom: 0.35rem;
+  }
+
+  &__texto {
+    font-size: map.get($font-sizes, "sm");
+    color: $ca-muted;
+    margin-bottom: 0;
+  }
+}
